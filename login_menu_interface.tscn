@@ -1,0 +1,328 @@
+[gd_scene load_steps=29 format=3 uid="uid://diuin02w7b2u0"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_eudob"]
+[ext_resource type="Texture2D" uid="uid://cw8ul2t3t06d6" path="res://Icons/close.png" id="1_mmtrx"]
+[ext_resource type="Script" uid="uid://baxwcfoql7tw1" path="res://login_menu_interface.gd" id="1_msune"]
+[ext_resource type="Texture2D" uid="uid://dklwqol80rtf1" path="res://Icons/google-logo-icon.png" id="3_m8f05"]
+[ext_resource type="Texture2D" uid="uid://vuxk6w6rx6el" path="res://Icons/eye.png" id="4_pvkk6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6nknp"]
+bg_color = Color(0, 0, 0, 0.137255)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eudob"]
+bg_color = Color(0.176419, 0.176419, 0.176419, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3tmpj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8f05"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjmwn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eo7e3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmtrx"]
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m8f05"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7est5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_msune"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvkk6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ihipy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7v12p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eaxxg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_klwy2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mmtrx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qjmwn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eo7e3"]
+bg_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msune"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.262933, 0.262932, 0.262932, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7est5"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ihipy"]
+content_margin_left = 16.0
+bg_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvkk6"]
+content_margin_left = 16.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.262933, 0.262932, 0.262932, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3tmpj"]
+content_margin_left = 16.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[node name="LoginMenu Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_msune")
+
+[node name="BackDrop" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6nknp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -261.0
+offset_top = -158.0
+offset_right = 331.0
+offset_bottom = 157.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.881091, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_eudob")
+
+[node name="CloseButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 531.139
+offset_top = 17.0
+offset_right = 570.139
+offset_bottom = 51.0
+theme_override_constants/icon_max_width = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3tmpj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m8f05")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qjmwn")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_eo7e3")
+icon = ExtResource("1_mmtrx")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ZEROINDEX Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 230.396
+offset_top = 21.0
+offset_right = 324.396
+offset_bottom = 44.0
+scale = Vector2(1.39065, 1.11719)
+theme_override_fonts/font = ExtResource("1_eudob")
+text = "ZEROINDEX"
+
+[node name="EmailTextBoxBackDrop" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 56.2146
+offset_top = 68.0
+offset_right = 557.215
+offset_bottom = 110.0
+scale = Vector2(0.954602, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_mmtrx")
+
+[node name="PasswordTextBoxBackDrop" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 56.2146
+offset_top = 129.0
+offset_right = 557.215
+offset_bottom = 171.0
+scale = Vector2(0.954602, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_mmtrx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 70.9447
+offset_top = 73.0
+offset_right = 537.945
+offset_bottom = 172.0
+scale = Vector2(0.954602, 1)
+theme_override_constants/separation = 30
+
+[node name="EmailTextBox" type="LineEdit" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_m8f05")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7est5")
+placeholder_text = "Email"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="PasswordTextBox" type="LineEdit" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_msune")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pvkk6")
+placeholder_text = "Password"
+context_menu_enabled = false
+emoji_menu_enabled = false
+secret = true
+
+[node name="Close_Open" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 484.626
+offset_top = 131.0
+offset_right = 522.626
+offset_bottom = 169.0
+mouse_default_cursor_shape = 2
+theme_override_constants/icon_max_width = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ihipy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7v12p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_eaxxg")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_klwy2")
+icon = ExtResource("4_pvkk6")
+icon_alignment = 1
+
+[node name="RememberMeCheckBox" type="CheckBox" parent="Panel"]
+layout_mode = 0
+offset_left = 56.7478
+offset_top = 187.0
+offset_right = 201.748
+offset_bottom = 218.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mmtrx")
+theme_override_constants/check_v_offset = 1
+text = "Remember Me"
+icon_alignment = 1
+
+[node name="LoginButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 217.0
+offset_right = 534.0
+offset_bottom = 248.0
+theme_override_fonts/font = ExtResource("1_eudob")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qjmwn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eo7e3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_msune")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7est5")
+text = "LOGIN"
+
+[node name="GoogleSignInButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 255.0
+offset_right = 536.0
+offset_bottom = 286.0
+theme_override_constants/icon_max_width = 15
+theme_override_fonts/font = ExtResource("1_eudob")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qjmwn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ihipy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pvkk6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3tmpj")
+text = "SIGN IN GOOGLE"
+icon = ExtResource("3_m8f05")
+alignment = 0
+
+[node name="RegisterNowButton" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 65.8274
+offset_top = 228.0
+offset_right = 189.827
+offset_bottom = 251.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("1_eudob")
+text = "REGISTER NOW"
+
+[node name="ForgetPasswordButton" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 65.8275
+offset_top = 256.0
+offset_right = 228.827
+offset_bottom = 279.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("1_eudob")
+text = "FORGET PASSWORD"
+
+[connection signal="pressed" from="Panel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="Panel/Close_Open" to="." method="_on_close_open_pressed"]
+[connection signal="gui_input" from="Panel/RegisterNowButton" to="." method="_on_register_now_button_gui_input"]
+[connection signal="gui_input" from="Panel/ForgetPasswordButton" to="." method="_on_forget_password_button_gui_input"]

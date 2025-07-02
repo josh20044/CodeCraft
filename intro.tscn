@@ -1,0 +1,225 @@
+[gd_scene load_steps=10 format=3 uid="uid://dxw6c46l5u0x7"]
+
+[ext_resource type="Script" uid="uid://cgnh7xby504mt" path="res://intro.gd" id="1_0a7ni"]
+[ext_resource type="Texture2D" uid="uid://epkcadlq5m4j" path="res://Icons/I-removebg.png" id="1_ayt76"]
+[ext_resource type="FontFile" uid="uid://dm84f7dhamw11" path="res://Fonts/OriginTech.otf" id="2_0a7ni"]
+[ext_resource type="Texture2D" uid="uid://dxh3a2on7bbs6" path="res://Icons/Z-removebg.png" id="2_7a8ye"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ayt76"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y72e6"]
+
+[sub_resource type="Animation" id="Animation_u2rf6"]
+resource_name = "DriftZ"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/Supporter/Z-removebg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(2, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(202, 77), Vector2(114, 77)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/Supporter/ero:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5, 6, 7, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Control/Supporter/I-removebg:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1, 2, 7, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Control/Supporter/ndex:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(5, 6, 7, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Control/Supporter/Z-removebg:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1, 2, 7, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_y6ycx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Control/Supporter/Z-removebg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(114, 77)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Control/Supporter/ero:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Control/Supporter/I-removebg:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Control/Supporter/ndex:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Control/Supporter/Z-removebg:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dpxxx"]
+_data = {
+&"DriftZ": SubResource("Animation_u2rf6"),
+&"RESET": SubResource("Animation_y6ycx")
+}
+
+[node name="Intro" type="Node2D"]
+script = ExtResource("1_0a7ni")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackDrop" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ayt76")
+
+[node name="Supporter" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -227.0
+offset_top = -75.0
+offset_right = 227.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_y72e6")
+
+[node name="I-removebg" type="Sprite2D" parent="CanvasLayer/Control/Supporter"]
+position = Vector2(237, 73)
+scale = Vector2(0.249753, 0.252728)
+texture = ExtResource("1_ayt76")
+
+[node name="ero" type="Label" parent="CanvasLayer/Control/Supporter"]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 72.0
+offset_right = 222.0
+offset_bottom = 110.0
+scale = Vector2(1.00771, 0.906184)
+theme_override_colors/font_color = Color(0, 0.905882, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0.615686, 1, 1)
+theme_override_fonts/font = ExtResource("2_0a7ni")
+theme_override_font_sizes/font_size = 40
+text = "ERO"
+
+[node name="Z-removebg" type="Sprite2D" parent="CanvasLayer/Control/Supporter"]
+position = Vector2(114, 77)
+scale = Vector2(0.281397, 0.253046)
+texture = ExtResource("2_7a8ye")
+
+[node name="ndex" type="Label" parent="CanvasLayer/Control/Supporter"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 241.0
+offset_top = 72.0
+offset_right = 361.0
+offset_bottom = 127.0
+scale = Vector2(1.00771, 0.906184)
+theme_override_colors/font_color = Color(0, 0.905882, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0.615686, 1, 1)
+theme_override_fonts/font = ExtResource("2_0a7ni")
+theme_override_font_sizes/font_size = 40
+text = "NDEX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_dpxxx")
+}
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

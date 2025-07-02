@@ -1,0 +1,129 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2f2vkwrcniln"]
+
+[ext_resource type="Script" uid="uid://g5tv76531l8f" path="res://settings_ui.gd" id="1_r3lmy"]
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_rwyt3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v83f6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rwyt3"]
+bg_color = Color(0.325441, 0.325441, 0.325441, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3lmy"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.194349, 0.194349, 0.194349, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lylge"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="SettingsUI" type="Control"]
+custom_minimum_size = Vector2(462, 250)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_r3lmy")
+metadata/_edit_horizontal_guides_ = [181.0]
+
+[node name="Music" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 3.0
+offset_right = 54.0
+offset_bottom = 26.0
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 30.0
+offset_right = 433.0
+offset_bottom = 46.0
+value = 80.0
+
+[node name="Effects" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 59.0
+offset_right = 60.0
+offset_bottom = 82.0
+text = "SFX"
+
+[node name="EffectsSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 86.0
+offset_right = 433.0
+offset_bottom = 102.0
+value = 80.0
+
+[node name="Resolution" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 124.0
+offset_right = 91.0
+offset_bottom = 147.0
+text = "Resolution"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 120.0
+offset_right = 432.0
+offset_bottom = 151.0
+selected = 0
+item_count = 4
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Windowed"
+popup/item_1/id = 1
+popup/item_2/text = "1980 x 1080"
+popup/item_2/id = 2
+popup/item_3/text = "1080 x 720"
+popup/item_3/id = 3
+
+[node name="Resolution2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 171.0
+offset_right = 123.0
+offset_bottom = 194.0
+text = "Change Layout"
+
+[node name="keybind" type="Button" parent="."]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 165.0
+offset_right = 431.0
+offset_bottom = 199.0
+theme_override_fonts/font = ExtResource("1_rwyt3")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v83f6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rwyt3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_r3lmy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lylge")
+text = "KEYBINDS"
+
+[connection signal="pressed" from="keybind" to="." method="_on_keybind_pressed"]

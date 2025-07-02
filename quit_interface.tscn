@@ -1,0 +1,151 @@
+[gd_scene load_steps=8 format=3 uid="uid://bqumdonh3h1ms"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_vslrf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vslrf"]
+bg_color = Color(0, 0, 0, 0.137255)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8n56g"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_chdbw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dvs5s"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0.194349, 0.194349, 0.194349, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrcnx"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.219501, 0.219501, 0.219501, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_71bm3"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[node name="Quit Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackDrop" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vslrf")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -251.0
+offset_top = -112.0
+offset_right = 179.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.16126, 1.15752)
+theme_override_styles/panel = SubResource("StyleBoxFlat_8n56g")
+
+[node name="Registration Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 36.1676
+offset_top = 30.2371
+offset_right = 129.168
+offset_bottom = 53.2371
+theme_override_fonts/font = ExtResource("1_vslrf")
+text = "QUIT GAME"
+
+[node name="ConfirmEmailButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 99.8915
+offset_top = 103.67
+offset_right = 201.892
+offset_bottom = 138.67
+theme_override_fonts/font = ExtResource("1_vslrf")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_chdbw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dvs5s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xrcnx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_71bm3")
+text = "YES"
+
+[node name="CancelButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 226.827
+offset_top = 103.864
+offset_right = 328.827
+offset_bottom = 138.864
+theme_override_fonts/font = ExtResource("1_vslrf")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_chdbw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dvs5s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xrcnx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_71bm3")
+text = "NO"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 58.5571
+offset_top = 60.4743
+offset_right = 371.557
+offset_bottom = 83.4743
+text = "Are you sure you want to quit the game?"

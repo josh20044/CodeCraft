@@ -1,0 +1,542 @@
+[gd_scene load_steps=33 format=3 uid="uid://c3sk5dsc1o2hs"]
+
+[ext_resource type="Script" uid="uid://d00du34gnwgv3" path="res://register_menu_interface.gd" id="1_4c7yu"]
+[ext_resource type="FontFile" uid="uid://dm84f7dhamw11" path="res://Fonts/OriginTech.otf" id="1_6mnco"]
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_hwo3c"]
+[ext_resource type="Texture2D" uid="uid://cw8ul2t3t06d6" path="res://Icons/close.png" id="2_6mnco"]
+[ext_resource type="Texture2D" uid="uid://vuxk6w6rx6el" path="res://Icons/eye.png" id="4_ag0hi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ag0hi"]
+bg_color = Color(0, 0, 0, 0.137255)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c7yu"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3poao"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s0doj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hc04p"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a3rgl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jeaeq"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hwo3c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6mnco"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ag0hi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3poao"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4c7yu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4k3w"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0.194349, 0.194349, 0.194349, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gloux"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.219501, 0.219501, 0.219501, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hwo3c"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a3rgl"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s0doj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hc04p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jeaeq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m4k3w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gloux"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pqiuw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sa6ys"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_drfex"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6mnco"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pqiuw"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0.196078, 0.196078, 0.196078, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sa6ys"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.219608, 0.219608, 0.219608, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 10.0
+expand_margin_bottom = 2.0
+
+[node name="RegisterMenu Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4c7yu")
+
+[node name="BackDrop" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ag0hi")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -426.0
+offset_top = -260.0
+offset_right = 306.0
+offset_bottom = 186.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.16126, 1.15752)
+theme_override_styles/panel = SubResource("StyleBoxFlat_4c7yu")
+
+[node name="ZEROINDEX Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 251.433
+offset_top = 418.136
+offset_right = 310.433
+offset_bottom = 431.136
+grow_horizontal = 2
+scale = Vector2(1.39065, 1.11719)
+theme_override_fonts/font = ExtResource("1_6mnco")
+theme_override_font_sizes/font_size = 10
+text = "ZEROINDEX"
+
+[node name="CloseButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -63.0
+offset_top = 23.0
+offset_right = -24.0
+offset_bottom = 57.0
+grow_horizontal = 0
+theme_override_constants/icon_max_width = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3poao")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s0doj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hc04p")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_a3rgl")
+icon = ExtResource("2_6mnco")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 34.055
+offset_top = 53.0
+offset_right = 171.055
+offset_bottom = 73.0
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter First Name:"
+
+[node name="FNameTextBox" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 43.9178
+offset_top = 79.4805
+offset_right = 333.918
+offset_bottom = 110.48
+theme_override_styles/focus = SubResource("StyleBoxFlat_jeaeq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jeaeq")
+placeholder_text = "First Name"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 33.5842
+offset_top = 124.404
+offset_right = 188.584
+offset_bottom = 144.404
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter Middle Name:"
+
+[node name="MNameTextBox" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 43.9178
+offset_top = 148.594
+offset_right = 333.918
+offset_bottom = 179.594
+theme_override_styles/focus = SubResource("StyleBoxFlat_jeaeq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jeaeq")
+placeholder_text = "Middle Name"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 33.5842
+offset_top = 196.109
+offset_right = 188.584
+offset_bottom = 216.109
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter Last Name:"
+
+[node name="LNameTextBox" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 43.9178
+offset_top = 221.163
+offset_right = 333.918
+offset_bottom = 252.163
+theme_override_styles/focus = SubResource("StyleBoxFlat_jeaeq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jeaeq")
+placeholder_text = "Last Name"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="Label4" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 33.5842
+offset_top = 265.223
+offset_right = 215.584
+offset_bottom = 285.223
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter Student Number:"
+
+[node name="SNumberTextBox" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 43.9178
+offset_top = 290.277
+offset_right = 333.918
+offset_bottom = 321.277
+theme_override_styles/focus = SubResource("StyleBoxFlat_jeaeq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jeaeq")
+placeholder_text = "Student Number"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="Label5" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 33.5842
+offset_top = 340.384
+offset_right = 188.584
+offset_bottom = 360.384
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter Username:"
+
+[node name="UsernameTextBox" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 43.9178
+offset_top = 364.574
+offset_right = 333.918
+offset_bottom = 395.574
+theme_override_styles/focus = SubResource("StyleBoxFlat_jeaeq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jeaeq")
+placeholder_text = "Username"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 31.8439
+offset_top = -143.614
+offset_right = 322.844
+offset_bottom = 28.3856
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 35
+
+[node name="EmailTextBox" type="LineEdit" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hwo3c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6mnco")
+placeholder_text = "Email"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/separation = 29
+
+[node name="VCodeTextBox" type="LineEdit" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ag0hi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3poao")
+placeholder_text = "Verification Code"
+max_length = 6
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="SendVCodeButton" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hwo3c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4c7yu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m4k3w")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gloux")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hwo3c")
+text = "SEND"
+
+[node name="PasswordBox" type="LineEdit" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_a3rgl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a3rgl")
+placeholder_text = "Password"
+max_length = 12
+context_menu_enabled = false
+emoji_menu_enabled = false
+secret = true
+
+[node name="Password" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 657.906
+offset_top = 221.163
+offset_right = 686.906
+offset_bottom = 250.163
+theme_override_constants/icon_max_width = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s0doj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hc04p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jeaeq")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_m4k3w")
+icon = ExtResource("4_ag0hi")
+icon_alignment = 1
+
+[node name="ConfirmPasswordBox" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 290.557
+offset_right = 689.0
+offset_bottom = 321.557
+theme_override_styles/focus = SubResource("StyleBoxFlat_jeaeq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jeaeq")
+placeholder_text = "Confirm Password"
+max_length = 12
+context_menu_enabled = false
+emoji_menu_enabled = false
+secret = true
+
+[node name="ConfirmPassword" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 656.184
+offset_top = 290.276
+offset_right = 689.184
+offset_bottom = 323.276
+theme_override_constants/icon_max_width = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gloux")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pqiuw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sa6ys")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_drfex")
+icon = ExtResource("4_ag0hi")
+icon_alignment = 1
+
+[node name="ConfirmButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 359.971
+offset_right = 689.0
+offset_bottom = 402.971
+theme_override_fonts/font = ExtResource("1_hwo3c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6mnco")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pqiuw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sa6ys")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hwo3c")
+text = "CONFIRM"
+
+[node name="Label6" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 388.842
+offset_top = 53.8639
+offset_right = 525.842
+offset_bottom = 73.8639
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter Email:"
+
+[node name="Label7" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 388.842
+offset_top = 124.705
+offset_right = 525.842
+offset_bottom = 144.705
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter Code:"
+
+[node name="Label8" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 388.842
+offset_top = 195.547
+offset_right = 598.842
+offset_bottom = 215.547
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Enter Password (Max : 12):"
+
+[node name="Label9" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 388.842
+offset_top = 266.388
+offset_right = 540.842
+offset_bottom = 286.388
+theme_override_fonts/font = ExtResource("1_hwo3c")
+text = "Confirm Password:"
+
+[node name="Registration Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 290.202
+offset_top = 17.2783
+offset_right = 440.202
+offset_bottom = 42.2783
+theme_override_fonts/font = ExtResource("1_hwo3c")
+theme_override_font_sizes/font_size = 20
+text = "REGISTRATION"
+
+[connection signal="pressed" from="Panel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="Panel/Password" to="." method="_on_password_pressed"]
+[connection signal="pressed" from="Panel/ConfirmPassword" to="." method="_on_confirm_password_pressed"]

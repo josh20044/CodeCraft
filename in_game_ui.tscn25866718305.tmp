@@ -1,0 +1,342 @@
+[gd_scene load_steps=33 format=3 uid="uid://biqkm1reqou0b"]
+
+[ext_resource type="Script" uid="uid://bnwbh0l5kw86n" path="res://in_game_ui.gd" id="1_dpq86"]
+[ext_resource type="Texture2D" uid="uid://diw2ksy15ntxj" path="res://Icons/Chapter.png" id="1_kenku"]
+[ext_resource type="Texture2D" uid="uid://bbmhvki63hkqj" path="res://Icons/Index.png" id="2_cwbuu"]
+[ext_resource type="Texture2D" uid="uid://tgn3w0njnhoq" path="res://Icons/Inventory.png" id="3_4v80v"]
+[ext_resource type="Texture2D" uid="uid://bt54oavoqvhb6" path="res://Icons/Character.png" id="4_0qsvx"]
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="5_4v80v"]
+[ext_resource type="Texture2D" uid="uid://haaebqb7ldc7" path="res://Icons/Menu.png" id="6_uusyb"]
+[ext_resource type="Texture2D" uid="uid://dleqlif4l4w60" path="res://Icons/Robot.png" id="7_ep3pr"]
+[ext_resource type="Texture2D" uid="uid://ds0odsyrbdi38" path="res://Icons/to-do-list.png" id="8_ep3pr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cwbuu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4v80v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qsvx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uusyb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ep3pr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dpq86"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8h7b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ukwlx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h3j15"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tjjbm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nw3uw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u4etj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pabwj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rkija"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_46s8a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4plnj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4v80v"]
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k0sw5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_101o6"]
+bg_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixewm"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.262933, 0.262932, 0.262932, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qo7k"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ep3pr"]
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dpq86"]
+bg_color = Color(0.87, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[node name="InGame UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dpq86")
+metadata/_edit_horizontal_guides_ = [42.0, 85.0, 186.0, 210.0]
+metadata/_edit_vertical_guides_ = [51.0, 1239.0]
+
+[node name="Dashboard" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 949.0
+offset_top = 43.0
+offset_right = 1239.0
+offset_bottom = 80.0
+theme_override_constants/separation = 50
+
+[node name="ChapterButton" type="Button" parent="Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cwbuu")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4v80v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0qsvx")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_uusyb")
+icon = ExtResource("1_kenku")
+
+[node name="IndexButton" type="Button" parent="Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ep3pr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dpq86")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l8h7b")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ukwlx")
+icon = ExtResource("2_cwbuu")
+
+[node name="InventoryButton" type="Button" parent="Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("3_4v80v")
+
+[node name="CharacterButton" type="Button" parent="Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pabwj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rkija")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_46s8a")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4plnj")
+icon = ExtResource("4_0qsvx")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 957.0
+offset_top = 86.0
+offset_right = 1231.0
+offset_bottom = 106.0
+theme_override_constants/separation = 64
+
+[node name="F2" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "F2"
+
+[node name="F3" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "F3"
+
+[node name="F4" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "F3"
+
+[node name="F5" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "F5"
+
+[node name="MenuButton" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 45.0
+offset_right = 68.0
+offset_bottom = 80.0
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("6_uusyb")
+
+[node name="ChatBotButton" type="Button" parent="."]
+offset_left = 241.0
+offset_top = 44.0
+offset_right = 276.0
+offset_bottom = 79.0
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("7_ep3pr")
+
+[node name="TaskButton" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 192.0
+offset_right = 68.0
+offset_bottom = 227.0
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("8_ep3pr")
+
+[node name="Currect TaskTitle" type="Label" parent="TaskButton"]
+layout_mode = 0
+offset_left = 41.0
+offset_right = 211.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "◆ Example Title Here"
+
+[node name="Currect TaskSmallDescription" type="Label" parent="TaskButton"]
+offset_left = 62.0
+offset_top = 18.0
+offset_right = 259.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
+text = "- Example Description Here"
+
+[node name="MAp Size Example" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 43.0
+offset_right = 226.0
+offset_bottom = 185.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4v80v")
+
+[node name="ESC" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 86.0
+offset_right = 68.0
+offset_bottom = 109.0
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "ESC"
+
+[node name="F1" type="Label" parent="."]
+offset_left = 251.0
+offset_top = 86.0
+offset_right = 269.0
+offset_bottom = 109.0
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "F1"
+
+[node name="TAB" type="Label" parent="."]
+offset_left = 34.0
+offset_top = 233.0
+offset_right = 67.0
+offset_bottom = 256.0
+theme_override_fonts/font = ExtResource("5_4v80v")
+text = "TAB"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 591.0
+offset_right = 1239.0
+offset_bottom = 702.0
+
+[node name="LoginButton" type="Button" parent="Panel"]
+offset_left = 9.0
+offset_top = 9.0
+offset_right = 156.0
+offset_bottom = 103.0
+theme_override_fonts/font = ExtResource("5_4v80v")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k0sw5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_101o6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ixewm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qo7k")
+text = "LOGIN"
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 945.0
+offset_top = 567.0
+offset_right = 1234.0
+offset_bottom = 581.0
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_4v80v")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/background = SubResource("StyleBoxFlat_ep3pr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dpq86")
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="HealthPercent" type="Label" parent="HealthBar"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -5.0
+offset_right = 284.0
+offset_bottom = 18.0
+theme_override_fonts/font = ExtResource("5_4v80v")
+theme_override_font_sizes/font_size = 12
+vertical_alignment = 1
+
+[node name="HealthBar2" type="ProgressBar" parent="."]
+offset_left = 945.0
+offset_top = 539.0
+offset_right = 1234.0
+offset_bottom = 553.0
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_4v80v")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/background = SubResource("StyleBoxFlat_ep3pr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dpq86")
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="HealthPercent" type="Label" parent="HealthBar2"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -5.0
+offset_right = 284.0
+offset_bottom = 18.0
+theme_override_fonts/font = ExtResource("5_4v80v")
+theme_override_font_sizes/font_size = 12
+vertical_alignment = 1

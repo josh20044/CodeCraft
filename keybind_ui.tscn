@@ -1,0 +1,446 @@
+[gd_scene load_steps=7 format=3 uid="uid://qqy7c4gwhvup"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_4p33d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y5ttk"]
+content_margin_left = 8.0
+content_margin_top = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4p33d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4p33d"]
+bg_color = Color(0.0923971, 0.0923971, 0.092397, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5w864"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ienf0"]
+
+[node name="Keybind UI" type="VBoxContainer"]
+custom_minimum_size = Vector2(435, 0)
+offset_right = 435.0
+offset_bottom = 110.0
+theme_override_constants/separation = 10
+metadata/_edit_vertical_guides_ = [462.0]
+
+[node name="Forward" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Forward"
+
+[node name="LineEdit" type="LineEdit" parent="Forward"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4p33d")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "W"
+placeholder_text = "W"
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+caret_blink = true
+
+[node name="Left" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Left"
+
+[node name="LineEdit" type="LineEdit" parent="Left"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "A"
+placeholder_text = "A"
+alignment = 1
+caret_blink = true
+
+[node name="Backward" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Backward"
+
+[node name="LineEdit" type="LineEdit" parent="Backward"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ienf0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "S"
+placeholder_text = "S"
+alignment = 1
+caret_blink = true
+
+[node name="Right" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Left"
+
+[node name="LineEdit" type="LineEdit" parent="Right"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "D"
+placeholder_text = "D"
+alignment = 1
+caret_blink = true
+
+[node name="Jump" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Jump"
+
+[node name="LineEdit" type="LineEdit" parent="Jump"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "SPACE"
+placeholder_text = "SPACE"
+alignment = 1
+caret_blink = true
+
+[node name="Sprint" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Sprint"
+
+[node name="LineEdit" type="LineEdit" parent="Sprint"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "L SHIFT"
+placeholder_text = "L SHIFT"
+alignment = 1
+caret_blink = true
+
+[node name="Crouch" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Crouch"
+
+[node name="LineEdit" type="LineEdit" parent="Crouch"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "L CTRL"
+placeholder_text = "L CTRL"
+alignment = 1
+caret_blink = true
+
+[node name="Interact" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Interact"
+
+[node name="LineEdit" type="LineEdit" parent="Interact"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "E"
+placeholder_text = "E"
+alignment = 1
+caret_blink = true
+
+[node name="Equipment" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Equipment"
+
+[node name="LineEdit" type="LineEdit" parent="Equipment"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "F"
+placeholder_text = "F"
+alignment = 1
+caret_blink = true
+
+[node name="Slot 1" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Slot 1"
+
+[node name="LineEdit" type="LineEdit" parent="Slot 1"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "1"
+placeholder_text = "1"
+alignment = 1
+caret_blink = true
+
+[node name="Slot 2" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Slot 2"
+
+[node name="LineEdit" type="LineEdit" parent="Slot 2"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "2"
+placeholder_text = "2"
+alignment = 1
+caret_blink = true
+
+[node name="Slot 3" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Slot 3"
+
+[node name="LineEdit" type="LineEdit" parent="Slot 3"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "3"
+placeholder_text = "3"
+alignment = 1
+caret_blink = true
+
+[node name="Slot 4" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Slot 4"
+
+[node name="LineEdit" type="LineEdit" parent="Slot 4"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "4"
+placeholder_text = "4"
+alignment = 1
+caret_blink = true
+
+[node name="Menu" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Menu"
+
+[node name="LineEdit" type="LineEdit" parent="Menu"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "ESC"
+placeholder_text = "ESC"
+alignment = 1
+caret_blink = true
+
+[node name="Chatbot" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Chatbot"
+
+[node name="LineEdit" type="LineEdit" parent="Chatbot"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "F1"
+placeholder_text = "F1"
+alignment = 1
+caret_blink = true
+
+[node name="Chapters" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Chapters"
+
+[node name="LineEdit" type="LineEdit" parent="Chapters"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "F2"
+placeholder_text = "F2"
+alignment = 1
+caret_blink = true
+
+[node name="Skills" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Skills"
+
+[node name="LineEdit" type="LineEdit" parent="Skills"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "F3"
+placeholder_text = "F3"
+alignment = 1
+caret_blink = true
+
+[node name="Inventory" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Inventory"
+
+[node name="LineEdit" type="LineEdit" parent="Inventory"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "F4"
+placeholder_text = "F4"
+alignment = 1
+caret_blink = true
+
+[node name="Character" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Character"
+
+[node name="LineEdit" type="LineEdit" parent="Character"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "F5"
+placeholder_text = "F5"
+alignment = 1
+caret_blink = true
+
+[node name="WorldMap" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Map"
+
+[node name="LineEdit" type="LineEdit" parent="WorldMap"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "M"
+placeholder_text = "M"
+alignment = 1
+caret_blink = true
+
+[node name="Task" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_y5ttk")
+text = "Task"
+
+[node name="LineEdit" type="LineEdit" parent="Task"]
+layout_mode = 0
+offset_left = 225.0
+offset_right = 434.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("1_4p33d")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5w864")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4p33d")
+text = "TAB"
+placeholder_text = "TAB"
+alignment = 1
+caret_blink = true
