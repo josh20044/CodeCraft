@@ -1,0 +1,10 @@
+res://intro.tscn
+res://register_menu_interface.tscn
+res://main_menu_screen.tscn
+res://settings_ui.tscn
+res://menu_ui.tscn
+res://keybind_ui.tscn
+res://login_menu_interface.tscn
+res://forgot_password_interface.tscn
+res://main_menu_screen.gd
+res://settings_ui.gd
