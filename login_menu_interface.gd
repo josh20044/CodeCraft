@@ -70,7 +70,6 @@ func _on_login_button_pressed() -> void:
 	var password = $Panel/VBoxContainer/PasswordTextBox.text
 	Firebase.Auth.login_with_email_and_password(email, password)
 
-
 func _on_google_sign_in_button_pressed() -> void:
 	var provider : AuthProvider = Firebase.Auth.get_GoogleProvider()
 	Firebase.Auth.get_auth_localhost(provider, 8060)

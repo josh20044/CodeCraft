@@ -538,5 +538,7 @@ theme_override_font_sizes/font_size = 20
 text = "REGISTRATION"
 
 [connection signal="pressed" from="Panel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/SendVCodeButton" to="." method="_on_send_v_code_button_pressed"]
 [connection signal="pressed" from="Panel/Password" to="." method="_on_password_pressed"]
 [connection signal="pressed" from="Panel/ConfirmPassword" to="." method="_on_confirm_password_pressed"]
+[connection signal="pressed" from="Panel/ConfirmButton" to="." method="_on_confirm_button_pressed"]

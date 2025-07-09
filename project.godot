@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 UiSignals="*res://Globals/UI_Signals.gd"
 Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
+Tool="*res://Globals/Tool.gd"
 
 [display]
 
