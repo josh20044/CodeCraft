@@ -1,8 +1,10 @@
-[gd_scene load_steps=31 format=3 uid="uid://bllwe5560fuv2"]
+[gd_scene load_steps=21 format=3 uid="uid://bllwe5560fuv2"]
 
-[ext_resource type="FontFile" uid="uid://bgal16fumeigc" path="res://main_menu/images/Inter-VariableFont_opsz,wght.ttf" id="3_bo27c"]
 [ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="8_deagj"]
 [ext_resource type="Texture2D" uid="uid://crm0wqby2uv0i" path="res://main_menu/images/X_btn.png" id="8_gyg05"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kf5o8"]
+bg_color = Color(0.24, 0.24, 0.24, 0.27451)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bo27c"]
 bg_color = Color(0.164706, 0.164706, 0.164706, 0.823529)
@@ -16,31 +18,6 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 anti_aliasing = false
-
-[sub_resource type="LabelSettings" id="LabelSettings_v8fol"]
-font = ExtResource("3_bo27c")
-outline_size = 1
-
-[sub_resource type="LabelSettings" id="LabelSettings_bo27c"]
-font = ExtResource("3_bo27c")
-font_size = 18
-outline_size = 1
-
-[sub_resource type="LabelSettings" id="LabelSettings_2rosn"]
-font = ExtResource("3_bo27c")
-font_color = Color(0, 1, 0, 1)
-outline_color = Color(0, 1, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_bdfby"]
-font_color = Color(0, 1, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_d7uwv"]
-font_color = Color(0, 1, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_deagj"]
-font_color = Color(1, 1, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_leifb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_deagj"]
 
@@ -170,17 +147,6 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
-[sub_resource type="LabelSettings" id="LabelSettings_gyg05"]
-font = ExtResource("8_deagj")
-font_size = 18
-
-[sub_resource type="LabelSettings" id="LabelSettings_onj3n"]
-font = ExtResource("8_deagj")
-
-[sub_resource type="LabelSettings" id="LabelSettings_djvm8"]
-font = ExtResource("8_deagj")
-font_size = 10
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bo27c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d7uwv"]
@@ -215,91 +181,82 @@ corner_radius_bottom_left = 50
 
 [node name="Assessment" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [501.0, 640.0, 782.0]
+metadata/_edit_horizontal_guides_ = [360.0]
 
-[node name="Panel" type="Panel" parent="."]
-offset_left = 437.0
-offset_top = 150.0
-offset_right = 863.0
-offset_bottom = 597.0
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kf5o8")
+
+[node name="Assesstment" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.0
+offset_top = -239.0
+offset_right = 139.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
 theme_override_styles/panel = SubResource("StyleBoxFlat_bo27c")
 
-[node name="ch1" type="Label" parent="."]
+[node name="Chapter" type="Label" parent="Assesstment"]
 layout_mode = 0
-offset_left = 608.0
-offset_top = 187.0
-offset_right = 684.0
-offset_bottom = 210.0
-text = "Chapter 1"
-label_settings = SubResource("LabelSettings_v8fol")
+offset_left = 13.0
+offset_top = 33.0
+offset_right = 333.0
+offset_bottom = 52.0
+theme_override_fonts/font = ExtResource("8_deagj")
+theme_override_font_sizes/font_size = 15
+text = "CHAPTER - 0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="Assesstment"]
 layout_mode = 0
-offset_left = 537.0
-offset_top = 213.0
-offset_right = 749.0
-offset_bottom = 236.0
-text = "Variables and Datatypes "
-label_settings = SubResource("LabelSettings_bo27c")
+offset_left = 13.0
+offset_top = 55.0
+offset_right = 333.0
+offset_bottom = 110.0
+theme_override_fonts/font = ExtResource("8_deagj")
+theme_override_font_sizes/font_size = 20
+text = "Title - 1"
+horizontal_alignment = 1
+autowrap_mode = 2
 
-[node name="lesson1" type="Label" parent="Title"]
+[node name="AssessmentStatus" type="Label" parent="Assesstment"]
 layout_mode = 0
-offset_left = 3.0
-offset_top = 31.0
-offset_right = 82.0
-offset_bottom = 54.0
-text = "  •  Integer"
-label_settings = SubResource("LabelSettings_2rosn")
+offset_left = 36.0
+offset_top = 265.0
+offset_right = 144.0
+offset_bottom = 292.0
+theme_override_fonts/font = ExtResource("8_deagj")
+theme_override_font_sizes/font_size = 12
+text = "AVAILABLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
-[node name="lesson2" type="Label" parent="Title"]
+[node name="X_btn" type="Button" parent="Assesstment"]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 57.0
-offset_right = 66.0
-offset_bottom = 80.0
-text = "  •  Float"
-label_settings = SubResource("LabelSettings_bdfby")
-
-[node name="lesson3" type="Label" parent="Title"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 82.0
-offset_right = 90.0
-offset_bottom = 105.0
-text = "  •  Boolean"
-label_settings = SubResource("LabelSettings_d7uwv")
-
-[node name="lesson4" type="Label" parent="Title"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 107.0
-offset_right = 73.0
-offset_bottom = 130.0
-text = "  >  String"
-label_settings = SubResource("LabelSettings_deagj")
-
-[node name="Status" type="Label" parent="."]
-layout_mode = 0
-offset_left = 536.0
-offset_top = 439.0
-offset_right = 607.0
-offset_bottom = 462.0
-text = "Available"
-label_settings = SubResource("LabelSettings_leifb")
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 617.0
-offset_top = 372.0
-offset_right = 760.0
-offset_bottom = 410.0
-flat = true
-
-[node name="X_btn" type="Button" parent="."]
-offset_left = 816.0
-offset_top = 175.0
-offset_right = 839.0
-offset_bottom = 197.0
+offset_left = 306.0
+offset_top = 25.0
+offset_right = 322.0
+offset_bottom = 40.0
 theme_override_icons/icon = ExtResource("8_gyg05")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_deagj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_gyg05")
@@ -308,11 +265,13 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_onj3n")
 icon_alignment = 1
 expand_icon = true
 
-[node name="Assess_btn" type="Button" parent="."]
-offset_left = 619.0
-offset_top = 439.0
-offset_right = 786.0
-offset_bottom = 467.0
+[node name="Assess_btn" type="Button" parent="Assesstment"]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 264.0
+offset_right = 314.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("8_deagj")
 theme_override_font_sizes/font_size = 12
 theme_override_styles/focus = SubResource("StyleBoxEmpty_d7uwv")
@@ -321,25 +280,26 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_djvm8")
 theme_override_styles/normal = SubResource("StyleBoxFlat_2nd25")
 text = "ASSESSMENT"
 
-[node name="Small_frame" type="Panel" parent="."]
-offset_left = 515.0
-offset_top = 472.0
-offset_right = 792.0
-offset_bottom = 574.0
+[node name="Small_frame" type="Panel" parent="Assesstment"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 297.0
+offset_right = 313.0
+offset_bottom = 377.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_v8fol")
 
-[node name="Button2" type="Button" parent="Small_frame"]
+[node name="Button2" type="Button" parent="Assesstment/Small_frame"]
 layout_mode = 0
-offset_left = 236.0
-offset_top = 19.0
-offset_right = 259.0
-offset_bottom = 41.0
+offset_left = 249.0
+offset_top = 15.0
+offset_right = 264.0
+offset_bottom = 30.0
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("8_deagj")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 10
 theme_override_styles/focus = SubResource("StyleBoxTexture_bo27c")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_bdfby")
 theme_override_styles/normal = SubResource("StyleBoxFlat_2rosn")
@@ -347,42 +307,74 @@ text = "i"
 icon_alignment = 1
 expand_icon = true
 
-[node name="scoring" type="Label" parent="Small_frame"]
-offset_left = 24.0
-offset_top = 16.0
-offset_right = 116.0
-offset_bottom = 39.0
-text = "SCORING :"
-label_settings = SubResource("LabelSettings_gyg05")
-
-[node name="scoring_val" type="Label" parent="Small_frame/scoring"]
+[node name="AssessmentStatus2" type="Label" parent="Assesstment/Small_frame"]
 layout_mode = 0
-offset_left = 98.0
-offset_top = 1.0
-offset_right = 201.0
-offset_bottom = 21.0
-text = "580"
-label_settings = SubResource("LabelSettings_onj3n")
+offset_left = 14.0
+offset_top = 12.0
+offset_right = 67.0
+offset_bottom = 29.0
+theme_override_fonts/font = ExtResource("8_deagj")
+theme_override_font_sizes/font_size = 13
+text = "SCORE :"
+vertical_alignment = 1
+autowrap_mode = 2
 
-[node name="Label" type="Label" parent="Small_frame"]
+[node name="AssessmentStatus2" type="Label" parent="Assesstment/Small_frame/AssessmentStatus2"]
+layout_mode = 0
+offset_left = 55.0
+offset_right = 208.0
+offset_bottom = 17.0
+theme_override_fonts/font = ExtResource("8_deagj")
+theme_override_font_sizes/font_size = 13
+text = "0"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="AssessmentStatus" type="Label" parent="Assesstment/Small_frame"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 27.0
+offset_right = 238.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("8_deagj")
+theme_override_font_sizes/font_size = 10
+text = "STUDENT GAMEPLAY"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="sliding_btn" type="Button" parent="Assesstment/Small_frame"]
 layout_mode = 0
 offset_left = 27.0
-offset_top = 40.0
-offset_right = 135.0
-offset_bottom = 53.0
-text = "STUDENT GAMEPLAY"
-label_settings = SubResource("LabelSettings_djvm8")
-
-[node name="sliding_btn" type="Button" parent="Small_frame"]
-offset_left = 28.0
-offset_top = 60.0
-offset_right = 252.0
-offset_bottom = 88.0
+offset_top = 42.0
+offset_right = 133.0
+offset_bottom = 60.0
 theme_override_fonts/font = ExtResource("8_deagj")
-theme_override_font_sizes/font_size = 12
+theme_override_font_sizes/font_size = 10
 theme_override_styles/focus = SubResource("StyleBoxEmpty_bo27c")
 theme_override_styles/hover = SubResource("StyleBoxFlat_d7uwv")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_s65uu")
 theme_override_styles/normal = SubResource("StyleBoxFlat_w20k8")
-text = "button
+text = "GAME BASED
 "
+
+[node name="sliding_btn2" type="Button" parent="Assesstment/Small_frame"]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 42.0
+offset_right = 248.0
+offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("8_deagj")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bo27c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d7uwv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s65uu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w20k8")
+text = "TEXT BASED
+"
+
+[node name="ChapterLessonList" type="ScrollContainer" parent="Assesstment"]
+layout_mode = 1
+offset_left = 35.0
+offset_top = 115.0
+offset_right = 323.0
+offset_bottom = 257.0
