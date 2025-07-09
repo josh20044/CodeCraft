@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwxkl4571fxb7"]
+
+[ext_resource type="PackedScene" uid="uid://ggyc7dce5yf2" path="res://Objects/IronOre.glb" id="1_xrnc8"]
+[ext_resource type="Shader" uid="uid://dgxtt1ybrsnw1" path="res://Objects/toon.tres" id="2_bkqci"]
+[ext_resource type="Texture2D" uid="uid://b7pjsvg7bvb4u" path="res://Objects/Colors/IronTexture.png" id="3_67i0u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rrhft"]
+render_priority = 0
+shader = ExtResource("2_bkqci")
+shader_parameter/Albedo = ExtResource("3_67i0u")
+
+[node name="IronOre2" instance=ExtResource("1_xrnc8")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="IronOre" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_rrhft")

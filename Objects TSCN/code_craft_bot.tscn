@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://uauqt275wdq0"]
+
+[ext_resource type="PackedScene" uid="uid://c3c7k5mapr3e3" path="res://Objects/CodeCraftBot.glb" id="1_63m8h"]
+[ext_resource type="Shader" uid="uid://dgxtt1ybrsnw1" path="res://Objects/toon.tres" id="2_w0407"]
+[ext_resource type="Texture2D" uid="uid://dbownsndodm7i" path="res://Objects/Colors/base(UPDATED)FOROBJECTS.png" id="3_ntu85"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_so3at"]
+render_priority = 0
+shader = ExtResource("2_w0407")
+shader_parameter/Albedo = ExtResource("3_ntu85")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1t3jv"]
+render_priority = 0
+shader = ExtResource("2_w0407")
+shader_parameter/Albedo = ExtResource("3_ntu85")
+
+[node name="CodeCraftBot" instance=ExtResource("1_63m8h")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Body" parent="." index="0"]
+transform = Transform3D(0.648733, 0, 0, 0, 0.587952, -0.274166, 0, 0.274166, 0.587952, 0, 0.23, -1.57)
+surface_material_override/0 = SubResource("ShaderMaterial_so3at")
+
+[node name="Head" parent="." index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_1t3jv")
+
+[node name="AnimationPlayer" parent="." index="2"]
+autoplay = "IdleBot"
