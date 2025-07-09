@@ -10,6 +10,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_keybind_pressed() -> void:
 	UiSignals.open_keybind.emit()
