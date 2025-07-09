@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Panel
 Button
 VBoxContainer
 ScrollContainer
 Label
+=======
+Timer
+SpinBox
+>>>>>>> e4a75578793cecda91c2eebbace3fe02f944e5ac
 Node
 Control
 LineEdit
@@ -11,4 +16,8 @@ HSlider
 Container
 VScrollBar
 HScrollBar
+<<<<<<< HEAD
 ProgressBar
+=======
+Button
+>>>>>>> e4a75578793cecda91c2eebbace3fe02f944e5ac
