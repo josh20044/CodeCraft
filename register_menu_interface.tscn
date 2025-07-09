@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://c3sk5dsc1o2hs"]
+[gd_scene load_steps=35 format=3 uid="uid://c3sk5dsc1o2hs"]
 
 [ext_resource type="Script" uid="uid://d00du34gnwgv3" path="res://register_menu_interface.gd" id="1_4c7yu"]
 [ext_resource type="FontFile" uid="uid://dm84f7dhamw11" path="res://Fonts/OriginTech.otf" id="1_6mnco"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cw8ul2t3t06d6" path="res://Icons/close.png" id="2_6mnco"]
 [ext_resource type="Texture2D" uid="uid://vuxk6w6rx6el" path="res://Icons/eye.png" id="4_ag0hi"]
 [ext_resource type="Script" path="res://s_number_text_box.gd" id="5_3poao"]
+[ext_resource type="Script" uid="uid://ckaxicr3xxgjv" path="res://http_real.gd" id="7_s0doj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ag0hi"]
 bg_color = Color(0, 0, 0, 0.137255)
@@ -542,6 +543,14 @@ theme_override_fonts/font = ExtResource("1_hwo3c")
 theme_override_font_sizes/font_size = 20
 text = "REGISTRATION"
 
+[node name="http_real" type="HTTPRequest" parent="."]
+script = ExtResource("7_s0doj")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
 [connection signal="pressed" from="Panel/CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="text_changed" from="Panel/UsernameTextBox" to="." method="_on_username_text_box_text_changed"]
 [connection signal="text_changed" from="Panel/VBoxContainer/HBoxContainer/VCodeTextBox" to="." method="_on_v_code_text_box_text_changed"]
@@ -551,3 +560,4 @@ text = "REGISTRATION"
 [connection signal="text_changed" from="Panel/ConfirmPasswordBox" to="." method="_on_confirm_password_box_text_changed"]
 [connection signal="pressed" from="Panel/ConfirmPassword" to="." method="_on_confirm_password_pressed"]
 [connection signal="pressed" from="Panel/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

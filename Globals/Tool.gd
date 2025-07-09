@@ -5,6 +5,7 @@ var email_script_path = ProjectSettings.globalize_path("user://email_script.py")
 var output = []
 var activeCode : String = "none"
 var modal = preload("res://modal.tscn")
+var userID = ""
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
