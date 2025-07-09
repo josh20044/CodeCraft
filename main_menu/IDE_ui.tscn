@@ -1,0 +1,163 @@
+[gd_scene load_steps=9 format=3 uid="uid://ve1xeygd3oxc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fhb2"]
+bg_color = Color(0.165656, 0.165656, 0.165656, 1)
+border_color = Color(0.164706, 0.164706, 0.164706, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0.164706, 0.164706, 0.164706, 1)
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6vsoq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t3525"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i8myu"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ip1w8"]
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ba8ix"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k0sej"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5re6n"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[node name="IdeUi" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 507.0
+offset_top = 42.0
+offset_right = 507.0
+offset_bottom = 42.0
+scale = Vector2(1, 0.97999)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 130.0
+offset_right = 185.0
+offset_bottom = 183.0
+scale = Vector2(11.8988, 9.09791)
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fhb2")
+
+[node name="Panel2" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 7.0
+offset_bottom = 49.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6vsoq")
+
+[node name="Panel3" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 44.0
+offset_bottom = 49.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_t3525")
+
+[node name="border_stop" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 62.2455
+offset_right = 517.0
+offset_bottom = 123.246
+theme_override_styles/panel = SubResource("StyleBoxFlat_i8myu")
+
+[node name="Stop" type="Panel" parent="border_stop"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 7.14293
+offset_right = 53.0
+offset_bottom = 54.1429
+theme_override_styles/panel = SubResource("StyleBoxFlat_ip1w8")
+
+[node name="btn_stop" type="Button" parent="border_stop"]
+layout_mode = 0
+offset_left = -76.0
+offset_top = 3.11407e-05
+offset_right = -15.0
+offset_bottom = 61.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ba8ix")
+
+[node name="border_pause" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 62.2455
+offset_right = 659.0
+offset_bottom = 124.246
+theme_override_styles/panel = SubResource("StyleBoxFlat_k0sej")
+
+[node name="ColorRect2" type="ColorRect" parent="border_pause"]
+layout_mode = 0
+offset_left = 34.0001
+offset_top = 10.2042
+offset_right = 48.0001
+offset_bottom = 50.2042
+
+[node name="ColorRect" type="ColorRect" parent="border_pause"]
+layout_mode = 0
+offset_left = 13.0001
+offset_top = 10.0204
+offset_right = 27.0001
+offset_bottom = 50.0204
+
+[node name="btn_pause" type="Button" parent="border_pause"]
+layout_mode = 0
+offset_left = 0.00012207
+offset_right = 62.0001
+offset_bottom = 62.0
+flat = true
+
+[node name="border_play" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 526.0
+offset_top = 62.2455
+offset_right = 587.0
+offset_bottom = 123.246
+theme_override_styles/panel = SubResource("StyleBoxFlat_5re6n")
+
+[node name="Polygon2D" type="Polygon2D" parent="border_play"]
+position = Vector2(2.00012, 1.02042)
+color = Color(0, 1, 0, 1)
+polygon = PackedVector2Array(13, 10.2042, 13, 47.9597, 49, 28.5717)
+
+[node name="btn_play" type="Button" parent="border_play"]
+layout_mode = 0
+offset_left = 0.00012207
+offset_right = 61.0001
+offset_bottom = 61.0
+flat = true
