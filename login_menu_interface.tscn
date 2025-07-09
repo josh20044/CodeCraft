@@ -324,5 +324,7 @@ text = "FORGET PASSWORD"
 
 [connection signal="pressed" from="Panel/CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="Panel/Close_Open" to="." method="_on_close_open_pressed"]
+[connection signal="pressed" from="Panel/LoginButton" to="." method="_on_login_button_pressed"]
+[connection signal="pressed" from="Panel/GoogleSignInButton" to="." method="_on_google_sign_in_button_pressed"]
 [connection signal="gui_input" from="Panel/RegisterNowButton" to="." method="_on_register_now_button_gui_input"]
 [connection signal="gui_input" from="Panel/ForgetPasswordButton" to="." method="_on_forget_password_button_gui_input"]
