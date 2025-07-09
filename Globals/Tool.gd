@@ -3,10 +3,12 @@ extends Node
 var interpreter_path = ProjectSettings.globalize_path("res://python_env/venv/Scripts/python.exe")
 var email_script_path = ProjectSettings.globalize_path("user://email_script.py")
 var output = []
+var activeCode : String = "none"
+var modal = preload("res://modal.tscn")
+var userID = ""
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -14,7 +16,7 @@ func _process(delta: float) -> void:
 
 func Send_email(receiver: String, code: String):
 	var exit_code = OS.execute(interpreter_path, [email_script_path, receiver, code], output, false)
-	print(output[0])
+	print(output)
 
 func generate_code(digit: int) -> String:
 	var code = ""
@@ -22,4 +24,10 @@ func generate_code(digit: int) -> String:
 	var nums = ["0","1","2","3","4","5","6","7","8","9"]
 	for i in range(digit):
 		code = code + nums[rng.randi_range(0, nums.size()-1)]
+	activeCode = code
 	return code
+
+func spawn_modal(node: Node, message: String):
+	var mod = modal.instantiate()
+	mod.msg = message
+	node.add_child(mod)
