@@ -85,23 +85,28 @@ func _on_close_button_pressed() -> void:
 func on_login_succeeded(auth):
 	#print(auth)
 	#$StateLabel.text = "Login success!"
+	print("Login success!")
 	Firebase.Auth.save_auth(auth)
-	get_tree().change_scene_to_file("res://Game.tscn")
 
 func on_signup_succeeded(auth):
 	#print(auth)
 	#$StateLabel.text = "Sign up success!"
+	print("Sign up success!")
 	Firebase.Auth.save_auth(auth)
-	get_tree().change_scene_to_file("res://Game.tscn")
+	UiSignals.signup_success = true
+	UiSignals.open_login.emit()
+	UiSignals.close_register.emit()
 
 func on_login_failed(error_code, message):
 	print(error_code)
 	print(message)
+	Tool.spawn_modal(self, message)
 	#$StateLabel.text = "Login failed. Error: %s" % message
 
 func on_signup_failed(error_code, message):
 	print(error_code)
-	print(message)
+	print("Sign up failed. Error: %s" % message)
+	Tool.spawn_modal(self, message)
 	#$StateLabel.text = "Sign up failed. Error: %s" % message
 
 func _on_confirm_button_pressed() -> void:
@@ -212,7 +217,6 @@ func anim_error():
 func _exit_tree() -> void:
 	thread_send.wait_to_finish()
 
-
 func _on_username_text_box_text_changed(new_text: String) -> void:
 	var old_caret_position: int = $Panel/UsernameTextBox.caret_column
 	var word: String = ""
@@ -223,7 +227,6 @@ func _on_username_text_box_text_changed(new_text: String) -> void:
 		word += valid_character.get_string()
 	$Panel/UsernameTextBox.set_text(word)
 	$Panel/UsernameTextBox.caret_column = old_caret_position + diff
-
 
 func _on_v_code_text_box_text_changed(new_text: String) -> void:
 	var caret_col = $Panel/VBoxContainer/HBoxContainer/VCodeTextBox.caret_column
@@ -247,7 +250,6 @@ func _on_v_code_text_box_text_changed(new_text: String) -> void:
 		$Panel/VBoxContainer/HBoxContainer/SendVCodeButton.disabled = false
 		code_correct = false
 
-
 func _on_password_box_text_changed(new_text: String) -> void:
 	if new_text.length() < 8:
 		$Panel/VBoxContainer/PasswordBox.modulate = Color.INDIAN_RED
@@ -256,7 +258,6 @@ func _on_password_box_text_changed(new_text: String) -> void:
 		$Panel/VBoxContainer/PasswordBox.modulate = Color.LIGHT_GREEN
 		pass_valid = true
 		pass_text = new_text
-		
 
 func _on_confirm_password_box_text_changed(new_text: String) -> void:
 	if pass_text == new_text:

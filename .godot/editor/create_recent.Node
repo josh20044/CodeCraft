@@ -1,9 +1,10 @@
+Label
+Panel
+CanvasLayer
 Timer
 SpinBox
 Node
 Control
-Panel
-Label
 LineEdit
 VBoxContainer
 OptionButton
@@ -11,5 +12,3 @@ HSlider
 Container
 ScrollContainer
 VScrollBar
-HScrollBar
-Button
