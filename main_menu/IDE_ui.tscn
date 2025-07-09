@@ -107,11 +107,11 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ip1w8")
 
 [node name="btn_stop" type="Button" parent="border_stop"]
 layout_mode = 0
-offset_left = -76.0
-offset_top = 3.11407e-05
-offset_right = -15.0
-offset_bottom = 61.0
+offset_top = -1.02039
+offset_right = 61.0
+offset_bottom = 59.9796
 theme_override_styles/normal = SubResource("StyleBoxFlat_ba8ix")
+flat = true
 
 [node name="border_pause" type="Panel" parent="."]
 layout_mode = 0

@@ -208,6 +208,7 @@ text = "ASSESSMENT TYPE:"
 label_settings = SubResource("LabelSettings_6pjwg")
 
 [node name="game_btn" type="Button" parent="ASSESSMENT TYPE"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 77.0
 offset_right = 211.0
@@ -221,6 +222,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_7hs5n")
 text = "GAME BASED"
 
 [node name="text_btn" type="Button" parent="ASSESSMENT TYPE"]
+layout_mode = 0
 offset_left = 29.0
 offset_top = 30.0
 offset_right = 210.0
@@ -243,6 +245,7 @@ text = "PROFESSOR ASSESSMENT:"
 label_settings = SubResource("LabelSettings_6pjwg")
 
 [node name="game_btn" type="Button" parent="PROFESSOR ASSESSMENT"]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 25.0
 offset_right = 214.0
@@ -273,6 +276,7 @@ offset_bottom = 101.0
 theme = SubResource("Theme_vgn1l")
 
 [node name="X_btn" type="Button" parent="."]
+layout_mode = 0
 offset_left = 446.0
 offset_top = 51.0
 offset_right = 469.0

@@ -218,6 +218,7 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="Panel" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 437.0
 offset_top = 150.0
 offset_right = 863.0
@@ -296,6 +297,7 @@ offset_bottom = 410.0
 flat = true
 
 [node name="X_btn" type="Button" parent="."]
+layout_mode = 0
 offset_left = 816.0
 offset_top = 175.0
 offset_right = 839.0
@@ -309,6 +311,7 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="Assess_btn" type="Button" parent="."]
+layout_mode = 0
 offset_left = 619.0
 offset_top = 439.0
 offset_right = 786.0
@@ -322,6 +325,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_2nd25")
 text = "ASSESSMENT"
 
 [node name="Small_frame" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 515.0
 offset_top = 472.0
 offset_right = 792.0
@@ -348,6 +352,7 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="scoring" type="Label" parent="Small_frame"]
+layout_mode = 0
 offset_left = 24.0
 offset_top = 16.0
 offset_right = 116.0
@@ -374,6 +379,7 @@ text = "STUDENT GAMEPLAY"
 label_settings = SubResource("LabelSettings_djvm8")
 
 [node name="sliding_btn" type="Button" parent="Small_frame"]
+layout_mode = 0
 offset_left = 28.0
 offset_top = 60.0
 offset_right = 252.0

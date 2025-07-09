@@ -1,8 +1,8 @@
 [gd_scene load_steps=34 format=3 uid="uid://dbsyakt6fqodt"]
 
 [ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_ggri0"]
-[ext_resource type="Texture2D" uid="uid://b1tv3bxe33pkq" path="res://Icons/Search.png" id="2_04ney"]
-[ext_resource type="Texture2D" uid="uid://cy1gxpv776wtx" path="res://Icons/return.png" id="3_5qw57"]
+[ext_resource type="Texture2D" uid="uid://6u5uhv2bx8qr" path="res://Icons/Search.png" id="2_04ney"]
+[ext_resource type="Texture2D" uid="uid://2j7qwsnfnx1c" path="res://Icons/return.png" id="3_5qw57"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fup6u"]
 bg_color = Color(0.164706, 0.164706, 0.164706, 1)
