@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+Label
+Panel
+CanvasLayer
+=======
+<<<<<<< HEAD
 Panel
 Button
 VBoxContainer
 ScrollContainer
 Label
 =======
+>>>>>>> 0bb00d898b7ac0794a1f671290434d7526db47ad
 Timer
 SpinBox
 >>>>>>> e4a75578793cecda91c2eebbace3fe02f944e5ac
@@ -15,9 +21,12 @@ OptionButton
 HSlider
 Container
 VScrollBar
+<<<<<<< HEAD
+=======
 HScrollBar
 <<<<<<< HEAD
 ProgressBar
 =======
 Button
 >>>>>>> e4a75578793cecda91c2eebbace3fe02f944e5ac
+>>>>>>> 0bb00d898b7ac0794a1f671290434d7526db47ad

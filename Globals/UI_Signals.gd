@@ -13,6 +13,8 @@ signal close_register
 signal open_forgot
 signal close_forgot
 
+var signup_success = false
+
 var is_fullscreen = true
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
