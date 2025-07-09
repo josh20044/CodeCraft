@@ -1,30 +1,91 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751545765
+::res://::1752045143
 delete_account_ui.tscn::PackedScene/PackedScene::7179218357053989431::1751463185::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
-forgot_password_interface.gd::GDScript::4308911607171996598::1751469249::0::1::::<>Control<><>0<>0<><>::
-forgot_password_interface.tscn::PackedScene::2219212297667883023::1751469405::0::1::::<><><>0<>0<><>::uid://b2nje6gsvdxfi::::res://forgot_password_interface.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
-icon.svg::CompressedTexture2D/CompressedTexture2D::5531191883250014980::1751020593::1751020599::1::::<><><>0<>0<>be77a034493f42db9dd754df6748bca9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+forgot_password_interface.gd::GDScript/GDScript::4308911607171996598::1751469249::0::1::::<>Control<><>0<>0<><>::
+forgot_password_interface.tscn::PackedScene::2219212297667883023::1751973902::0::1::::<><><>0<>0<><>::uid://b2nje6gsvdxfi::::res://forgot_password_interface.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+icon.svg::CompressedTexture2D/CompressedTexture2D::6533344949675003942::1751020593::1751645491::1::::<><><>0<>0<>581e63536c9486afb6b7fe83fc671ab3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 intro.gd::GDScript/GDScript::5221294715084909959::1751124486::0::1::::<>Node2D<><>0<>0<><>::
-intro.tscn::PackedScene::8820909135313719858::1751469404::0::1::::<><><>0<>0<><>::uid://cgnh7xby504mt::::res://intro.gd<>uid://epkcadlq5m4j::::res://Icons/I-removebg.png<>uid://dm84f7dhamw11::::res://Fonts/OriginTech.otf<>uid://dxh3a2on7bbs6::::res://Icons/Z-removebg.png
+intro.tscn::PackedScene::8820909135313719858::1751973901::0::1::::<><><>0<>0<><>::uid://cgnh7xby504mt::::res://intro.gd<>uid://epkcadlq5m4j::::res://Icons/I-removebg.png<>uid://dm84f7dhamw11::::res://Fonts/OriginTech.otf<>uid://dxh3a2on7bbs6::::res://Icons/Z-removebg.png
 in_game_ui.gd::GDScript/GDScript::3344366510580870015::1751432244::0::1::::<>Control<><>0<>0<><>::
 in_game_ui.tscn::PackedScene/PackedScene::2981591468389316051::1751463185::0::1::::<><><>0<>0<><>::uid://bnwbh0l5kw86n::::res://in_game_ui.gd<>uid://diw2ksy15ntxj::::res://Icons/Chapter.png<>uid://bbmhvki63hkqj::::res://Icons/Index.png<>uid://tgn3w0njnhoq::::res://Icons/Inventory.png<>uid://bt54oavoqvhb6::::res://Icons/Character.png<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://haaebqb7ldc7::::res://Icons/Menu.png<>uid://dleqlif4l4w60::::res://Icons/Robot.png<>uid://ds0odsyrbdi38::::res://Icons/to-do-list.png
-keybind_ui.tscn::PackedScene::1157566045653166755::1751469404::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
-login_menu_interface.gd::GDScript::2435241002452107394::1751469238::0::1::::<>Control<><>0<>0<><>::
-login_menu_interface.tscn::PackedScene::7762570662363539253::1751469404::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png<>uid://baxwcfoql7tw1::::res://login_menu_interface.gd<>uid://dklwqol80rtf1::::res://Icons/google-logo-icon.png<>uid://vuxk6w6rx6el::::res://Icons/eye.png
-main_menu_screen.gd::GDScript::2160542339531135671::1751469404::0::1::::<>Node2D<><>0<>0<><>::
-main_menu_screen.tscn::PackedScene::1880217137613345234::1751469404::0::1::::<><><>0<>0<><>::uid://bmfgphpa4lamx::::res://MainMenuUI_Resouces/CodeCraftLogoutButtonScreen.png<>uid://51t21crnditj::::res://main_menu_screen.gd<>uid://b7jervevnrvjx::::res://MainMenuUI_Resouces/ExampleVideo/ExampleIntroVideo.ogv<>uid://dumns6leuo3w6::::res://MainMenuUI_Resouces/CodeCraftMenuButtonScreen.png<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
-menu_ui.gd::GDScript::3992017085993115749::1751467251::0::1::::<>Control<><>0<>0<><>::
-menu_ui.tscn::PackedScene::3818853487959867147::1751469404::0::1::::<><><>0<>0<><>::uid://bw4065rwcxrjx::::res://menu_ui.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png
+keybind_ui.tscn::PackedScene::1157566045653166755::1751973902::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+login_menu_interface.gd::GDScript::2435241002452107394::1751942451::0::1::::<>Control<><>0<>0<><>::
+login_menu_interface.tscn::PackedScene::7762570662363539253::1751973902::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png<>uid://baxwcfoql7tw1::::res://login_menu_interface.gd<>uid://dklwqol80rtf1::::res://Icons/google-logo-icon.png<>uid://vuxk6w6rx6el::::res://Icons/eye.png
+main_menu_screen.gd::GDScript/GDScript::2160542339531135671::1751644869::0::1::::<>Node2D<><>0<>0<><>::
+main_menu_screen.tscn::PackedScene::1880217137613345234::1751973902::0::1::::<><><>0<>0<><>::uid://bmfgphpa4lamx::::res://MainMenuUI_Resouces/CodeCraftLogoutButtonScreen.png<>uid://51t21crnditj::::res://main_menu_screen.gd<>uid://b7jervevnrvjx::::res://MainMenuUI_Resouces/ExampleVideo/ExampleIntroVideo.ogv<>uid://dumns6leuo3w6::::res://MainMenuUI_Resouces/CodeCraftMenuButtonScreen.png<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+menu_ui.gd::GDScript/GDScript::3992017085993115749::1751467251::0::1::::<>Control<><>0<>0<><>::
+menu_ui.tscn::PackedScene::3818853487959867147::1751973902::0::1::::<><><>0<>0<><>::uid://bw4065rwcxrjx::::res://menu_ui.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png
 quit_interface.tscn::PackedScene/PackedScene::3551464454042857386::1751463185::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
-register_menu_interface.gd::GDScript::8965811968481993854::1751468879::0::1::::<>Control<><>0<>0<><>::
-register_menu_interface.tscn::PackedScene::6775948718071723580::1751469404::0::1::::<><><>0<>0<><>::uid://d00du34gnwgv3::::res://register_menu_interface.gd<>uid://dm84f7dhamw11::::res://Fonts/OriginTech.otf<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png<>uid://vuxk6w6rx6el::::res://Icons/eye.png
-settings_ui.gd::GDScript::484257249022210595::1751545364::0::1::::<>Control<><>0<>0<><>::
-settings_ui.tscn::PackedScene::9066360138547967819::1751469404::0::1::::<><><>0<>0<><>::uid://g5tv76531l8f::::res://settings_ui.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+register_menu_interface.gd::GDScript::8965811968481993854::1751973901::0::1::::<>Control<><>0<>0<><>::
+register_menu_interface.tscn::PackedScene::6775948718071723580::1751973901::0::1::::<><><>0<>0<><>::uid://d00du34gnwgv3::::res://register_menu_interface.gd<>uid://dm84f7dhamw11::::res://Fonts/OriginTech.otf<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png<>uid://vuxk6w6rx6el::::res://Icons/eye.png
+settings_ui.gd::GDScript/GDScript::484257249022210595::1751644869::0::1::::<>Control<><>0<>0<><>::
+settings_ui.tscn::PackedScene::9066360138547967819::1751973902::0::1::::<><><>0<>0<><>::uid://g5tv76531l8f::::res://settings_ui.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+::res://addons/::1751644478
+::res://addons/godot-firebase/::1751645491
+icon.svg::CompressedTexture2D/CompressedTexture2D::1932520971276548949::1751644478::1751645491::1::::<><><>0<>0<>8cad35af410112003f816638b4225940<>res://.godot/imported/icon.svg-5c4f39d37c9275a3768de73a392fd315.ctex::
+plugin.cfg::TextFile/TextFile::-1::1751644478::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript/GDScript::5537674589024390752::1751644478::0::1::::<>EditorPlugin<><>0<>1<><>::
+README.md::TextFile/TextFile::-1::1751644478::0::1::::<><><>0<>0<><>::
+Utilities.gd::GDScript/GDScript::5698845289266541276::1751644478::0::1::::Utilities<>Node<><>0<>0<><>::
+::res://addons/godot-firebase/auth/::1751644479
+auth.gd::GDScript/GDScript::5873173311217755461::1751644478::0::1::::FirebaseAuth<>HTTPRequest<><>0<>1<><>::
+auth_provider.gd::GDScript/GDScript::9049260256899830517::1751644478::0::1::::AuthProvider<>RefCounted<><>0<>1<><>::
+user_data.gd::GDScript/GDScript::2797385997589353348::1751644478::0::1::::FirebaseUserData<>RefCounted<><>0<>1<><>::
+::res://addons/godot-firebase/auth/providers/::1751644479
+facebook.gd::GDScript/GDScript::6340323594554312800::1751644478::0::1::::FacebookProvider<>AuthProvider<><>0<>0<><>::
+github.gd::GDScript/GDScript::8688849613909508250::1751644478::0::1::::GitHubProvider<>AuthProvider<><>0<>0<><>::
+google.gd::GDScript/GDScript::5366354084237799010::1751644478::0::1::::GoogleProvider<>AuthProvider<><>0<>0<><>::
+twitter.gd::GDScript/GDScript::1158996257120384223::1751644478::0::1::::TwitterProvider<>AuthProvider<><>0<>0<><>::
+::res://addons/godot-firebase/database/::1751644479
+database.gd::GDScript/GDScript::8939601739514355096::1751644478::0::1::::FirebaseDatabase<>Node<><>0<>1<><>::
+database_store.gd::GDScript/GDScript::6235208371920711169::1751644478::0::1::::FirebaseDatabaseStore<>Node<><>0<>1<><>::
+firebase_database_reference.tscn::PackedScene/PackedScene::3743898896187944825::1751644478::0::1::::<><><>0<>0<><>::res://addons/godot-firebase/database/reference.gd<>uid://ctb4l7plg8kqg::::res://addons/godot-firebase/queues/queueable_http_request.tscn<>res://addons/http-sse-client/HTTPSSEClient.gd<>res://addons/godot-firebase/database/database_store.gd
+firebase_once_database_reference.tscn::PackedScene/PackedScene::9027041200797885914::1751644478::0::1::::<><><>0<>0<><>::res://addons/godot-firebase/database/once_reference.gd<>uid://ctb4l7plg8kqg::::res://addons/godot-firebase/queues/queueable_http_request.tscn
+once_reference.gd::GDScript/GDScript::296332693270976510::1751644478::0::1::::FirebaseOnceDatabaseReference<>Node<><>0<>0<><>::
+reference.gd::GDScript/GDScript::9053801142398248880::1751644478::0::1::::FirebaseDatabaseReference<>Node<><>0<>1<><>::
+resource.gd::GDScript/GDScript::3823965769343865836::1751644478::0::1::::FirebaseResource<>Resource<><>0<>1<><>::
+::res://addons/godot-firebase/dynamiclinks/::1751644479
+dynamiclinks.gd::GDScript/GDScript::8853084233940379344::1751644478::0::1::::FirebaseDynamicLinks<>Node<><>0<>1<><>::
+::res://addons/godot-firebase/firebase/::1751644479
+firebase.gd::GDScript/GDScript::4679349391277836239::1751644478::0::1::::<>Node<><>0<>1<><>::
+firebase.tscn::PackedScene/PackedScene::6250566209717982510::1751644478::0::1::::<><><>0<>0<><>::res://addons/godot-firebase/database/database.gd<>res://addons/godot-firebase/firestore/firestore.gd<>res://addons/godot-firebase/firebase/firebase.gd<>res://addons/godot-firebase/auth/auth.gd<>res://addons/godot-firebase/storage/storage.gd<>res://addons/godot-firebase/dynamiclinks/dynamiclinks.gd<>res://addons/godot-firebase/functions/functions.gd<>uid://5xa6ulbllkjk::::res://addons/godot-firebase/remote_config/firebase_remote_config.tscn
+::res://addons/godot-firebase/firestore/::1751644479
+field_transform.gd::GDScript/GDScript::538148298064335992::1751644478::0::1::::FieldTransform<>FirestoreTransform<><>0<>0<><>::
+field_transform_array.gd::GDScript/GDScript::5228076333965346392::1751644478::0::1::::FieldTransformArray<>RefCounted<><>0<>0<><>::
+firestore.gd::GDScript/GDScript::4450236201183923230::1751644478::0::1::::FirebaseFirestore<>Node<><>0<>1<><>::
+firestore_collection.gd::GDScript/GDScript::7257356831513234955::1751644478::0::1::::FirestoreCollection<>Node<><>0<>1<><>::
+firestore_document.gd::GDScript/GDScript::2969420828494154331::1751644478::0::1::::FirestoreDocument<>Node<><>0<>1<><>::
+firestore_listener.gd::GDScript/GDScript::4193979215452023577::1751644478::0::1::::FirestoreListener<>Node<><>0<>0<><>::
+firestore_listener.tscn::PackedScene/PackedScene::3975908630060077356::1751644478::0::1::::<><><>0<>0<><>::res://addons/godot-firebase/firestore/firestore_listener.gd
+firestore_query.gd::GDScript/GDScript::916997439480153227::1751644478::0::1::::FirestoreQuery<>RefCounted<><>0<>1<><>::
+firestore_task.gd::GDScript/GDScript::7319550846524622716::1751644478::0::1::::FirestoreTask<>RefCounted<><>0<>1<><>::
+firestore_transform.gd::GDScript/GDScript::484807888983331819::1751644478::0::1::::FirestoreTransform<>RefCounted<><>0<>0<><>::
+::res://addons/godot-firebase/firestore/field_transforms/::1751644479
+decrement_transform.gd::GDScript/GDScript::4297083997788060938::1751644478::0::1::::DecrementTransform<>FieldTransform<><>0<>0<><>::
+increment_transform.gd::GDScript/GDScript::8164140749999441559::1751644478::0::1::::IncrementTransform<>FieldTransform<><>0<>0<><>::
+max_transform.gd::GDScript/GDScript::8029171218753519940::1751644478::0::1::::MaxTransform<>FieldTransform<><>0<>0<><>::
+min_transform.gd::GDScript/GDScript::773891588857274730::1751644478::0::1::::MinTransform<>FieldTransform<><>0<>0<><>::
+server_timestamp_transform.gd::GDScript/GDScript::7478248593047430365::1751644478::0::1::::ServerTimestampTransform<>FieldTransform<><>0<>0<><>::
+::res://addons/godot-firebase/functions/::1751644479
+functions.gd::GDScript/GDScript::2817988873727874417::1751644478::0::1::::FirebaseFunctions<>Node<><>0<>1<><>::
+function_task.gd::GDScript/GDScript::1778799586506095571::1751644478::0::1::::FunctionTask<>RefCounted<><>0<>1<><>::
+::res://addons/godot-firebase/queues/::1751644479
+queueable_http_request.gd::GDScript/GDScript::3205121988867874104::1751644478::0::1::::QueueableHTTPRequest<>HTTPRequest<><>0<>0<><>::
+queueable_http_request.tscn::PackedScene/PackedScene::6110275915214446166::1751644478::0::1::::<><><>0<>0<><>::res://addons/godot-firebase/queues/queueable_http_request.gd
+::res://addons/godot-firebase/remote_config/::1751644479
+firebase_remote_config.gd::GDScript/GDScript::4653944100813047834::1751644478::0::1::::FirebaseRemoteConfig<>Node<><>0<>1<><>::
+firebase_remote_config.tscn::PackedScene/PackedScene::2153202424615828940::1751644479::0::1::::<><><>0<>0<><>::res://addons/godot-firebase/remote_config/firebase_remote_config.gd
+remote_config.gd::GDScript/GDScript::2743226625620213612::1751644479::0::1::::RemoteConfig<>RefCounted<><>0<>0<><>::
+::res://addons/godot-firebase/storage/::1751644479
+storage.gd::GDScript/GDScript::6350265433740242563::1751644479::0::1::::FirebaseStorage<>Node<><>0<>1<><>::
+storage_reference.gd::GDScript/GDScript::4958476662860659386::1751644479::0::1::::StorageReference<>Node<><>0<>1<><>::
+storage_task.gd::GDScript/GDScript::1206979373583539765::1751644479::0::1::::StorageTask<>RefCounted<><>0<>1<><>::
 ::res://Fonts/::1751035418
 Inter Extra Bold 800.otf::FontFile/FontFile::8844882121578976429::1751020665::1751020665::1::::<><><>0<>0<>7c087625cbc269202f45b38e8d4adaa5<>res://.godot/imported/Inter Extra Bold 800.otf-f28acb16067a6dd38ab0c377cdfb344c.fontdata::
 OriginTech.otf::FontFile/FontFile::8071424048079580134::1751035417::1751035417::1::::<><><>0<>0<>c3998f3fc113781e6ccfcb5ff2d1bf1a<>res://.godot/imported/OriginTech.otf-76bb7e99b87c055ffcd0603cb6cf7b0f.fontdata::
-::res://Globals/::1751469117
-UI_Signals.gd::GDScript::6850211288056990354::1751469117::0::1::::<>Node<><>0<>0<><>::
+::res://Globals/::1751956794
+Tool.gd::GDScript::8242815509853444967::1751956794::0::1::::<>Node<><>0<>0<><>::
+UI_Signals.gd::GDScript/GDScript::6850211288056990354::1751469117::0::1::::<>Node<><>0<>0<><>::
 ::res://Icons/::1751129984
 BurgerButton.png::CompressedTexture2D/CompressedTexture2D::8518328496785028209::1751020665::1751020665::1::::<><><>0<>0<>0810a3099172df582add8379958f799c<>res://.godot/imported/BurgerButton.png-226e52d6110c6ee10fe2d2fb11448b50.ctex::
 Chapter.png::CompressedTexture2D/CompressedTexture2D::7767847311234174187::1751020665::1751020665::1::::<><><>0<>0<>0655462ca93b808551106dfc438acaf3<>res://.godot/imported/Chapter.png-a0bbb20f247819f134ccb7e4a03a714f.ctex::
@@ -43,8 +104,138 @@ ProgressBarWhite.png::CompressedTexture2D/CompressedTexture2D::30505886807309070
 Robot.png::CompressedTexture2D/CompressedTexture2D::7940588386975432327::1751020665::1751020665::1::::<><><>0<>0<>957253b3302a84cb7d68067630659285<>res://.godot/imported/Robot.png-3d65abadd56b063e56def25e35863141.ctex::
 to-do-list.png::CompressedTexture2D/CompressedTexture2D::8475127058965300929::1751020665::1751020665::1::::<><><>0<>0<>f99a18e217e8191a6dd10fa74997544f<>res://.godot/imported/to-do-list.png-a94a9a184a8085012980f23a56b4bac1.ctex::
 Z-removebg.png::CompressedTexture2D/CompressedTexture2D::8789757615221107503::1751020665::1751020665::1::::<><><>0<>0<>0729d28ea3422234e2e0ae12f588c27f<>res://.godot/imported/Z-removebg.png-928448a6df1aa3116d9d4e10a3c5c510.ctex::
+::res://ios_plugins/::1751640471
+::res://ios_plugins/godot_svc/::1751640471
+::res://ios_plugins/godot_svc/bin 3.x/::1751640471
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.debug.xcframework/::1751640471
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.debug.xcframework/ios-arm64_armv7/::1751640471
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.debug.xcframework/ios-arm64_x86_64-simulator/::1751640471
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.release.xcframework/::1751640471
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.release.xcframework/ios-arm64_armv7/::1751640471
+::res://ios_plugins/godot_svc/bin 3.x/godot_svc.release.xcframework/ios-arm64_x86_64-simulator/::1751640471
+::res://ios_plugins/godot_svc/src/::1751640471
 ::res://MainMenuUI_Resouces/::1751022173
 CodeCraftLogoutButtonScreen.png::CompressedTexture2D/CompressedTexture2D::3239400175859664535::1751020665::1751020665::1::::<><><>0<>0<>f3bf3edc6d545109f553321d474e0f54<>res://.godot/imported/CodeCraftLogoutButtonScreen.png-b9eb0256a7930109a6d5ffa644777013.ctex::
 CodeCraftMenuButtonScreen.png::CompressedTexture2D/CompressedTexture2D::8588634567510675179::1751020665::1751020665::1::::<><><>0<>0<>14648c820521085bcfa3ff229b5cc58e<>res://.godot/imported/CodeCraftMenuButtonScreen.png-df412cdd4a9de10ba4992096b25d32fb.ctex::
 ::res://MainMenuUI_Resouces/ExampleVideo/::1751022173
 ExampleIntroVideo.ogv::VideoStreamTheora/VideoStreamTheora::4651317416505904149::1751022173::0::1::::<><><>0<>0<><>::
+::res://Python_env/::1751550825
+::res://Python_env/venv/::1751645146
+pyvenv.cfg::TextFile/TextFile::-1::1751645146::0::1::::<><><>0<>0<><>::
+::res://Python_env/venv/Include/::1751549998
+::res://Python_env/venv/Lib/::1751549998
+::res://Python_env/venv/Lib/site-packages/::1751550003
+::res://Python_env/venv/Lib/site-packages/pip/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/cli/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/cli/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/commands/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/commands/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/distributions/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/distributions/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/index/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/index/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/locations/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/locations/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/metadata/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/metadata/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/metadata/importlib/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/metadata/importlib/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/models/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/models/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/network/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/network/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/operations/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/operations/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/operations/build/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/operations/build/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/operations/install/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/operations/install/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/req/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/req/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/resolution/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/resolution/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/resolution/legacy/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/resolution/legacy/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/resolution/resolvelib/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/resolution/resolvelib/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/utils/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/utils/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/vcs/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_internal/vcs/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/::1751645145
+vendor.txt::TextFile/TextFile::-1::1751645145::0::1::::<><><>0<>0<><>::
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/cachecontrol/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/cachecontrol/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/cachecontrol/caches/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/cachecontrol/caches/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/certifi/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/certifi/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/dependency_groups/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/dependency_groups/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/distlib/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/distlib/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/distro/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/distro/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/idna/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/idna/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/msgpack/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/msgpack/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/packaging/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/packaging/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/packaging/licenses/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/packaging/licenses/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pkg_resources/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pkg_resources/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/platformdirs/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/platformdirs/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/filters/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/filters/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/formatters/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/formatters/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/lexers/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/lexers/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/styles/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pygments/styles/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pyproject_hooks/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pyproject_hooks/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pyproject_hooks/_in_process/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/pyproject_hooks/_in_process/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/requests/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/requests/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/resolvelib/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/resolvelib/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/resolvelib/resolvers/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/rich/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/rich/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/tomli/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/tomli/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/tomli_w/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/tomli_w/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/truststore/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/truststore/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/contrib/_securetransport/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/packages/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/packages/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/packages/backports/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/util/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip/_vendor/urllib3/util/__pycache__/::1751645145
+::res://Python_env/venv/Lib/site-packages/pip-25.1.1.dist-info/::1751645145
+entry_points.txt::TextFile/TextFile::-1::1751645145::0::1::::<><><>0<>0<><>::
+top_level.txt::TextFile/TextFile::-1::1751645145::0::1::::<><><>0<>0<><>::
+::res://Python_env/venv/Lib/site-packages/pip-25.1.1.dist-info/licenses/::1751645145
+AUTHORS.txt::TextFile/TextFile::-1::1751645145::0::1::::<><><>0<>0<><>::
+LICENSE.txt::TextFile/TextFile::-1::1751645145::0::1::::<><><>0<>0<><>::
+::res://Python_env/venv/Scripts/::1751645145
