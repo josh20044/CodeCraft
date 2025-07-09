@@ -1,0 +1,50 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1751545765
+delete_account_ui.tscn::PackedScene/PackedScene::7179218357053989431::1751463185::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+forgot_password_interface.gd::GDScript::4308911607171996598::1751469249::0::1::::<>Control<><>0<>0<><>::
+forgot_password_interface.tscn::PackedScene::2219212297667883023::1751469405::0::1::::<><><>0<>0<><>::uid://b2nje6gsvdxfi::::res://forgot_password_interface.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+icon.svg::CompressedTexture2D/CompressedTexture2D::5531191883250014980::1751020593::1751020599::1::::<><><>0<>0<>be77a034493f42db9dd754df6748bca9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+intro.gd::GDScript/GDScript::5221294715084909959::1751124486::0::1::::<>Node2D<><>0<>0<><>::
+intro.tscn::PackedScene::8820909135313719858::1751469404::0::1::::<><><>0<>0<><>::uid://cgnh7xby504mt::::res://intro.gd<>uid://epkcadlq5m4j::::res://Icons/I-removebg.png<>uid://dm84f7dhamw11::::res://Fonts/OriginTech.otf<>uid://dxh3a2on7bbs6::::res://Icons/Z-removebg.png
+in_game_ui.gd::GDScript/GDScript::3344366510580870015::1751432244::0::1::::<>Control<><>0<>0<><>::
+in_game_ui.tscn::PackedScene/PackedScene::2981591468389316051::1751463185::0::1::::<><><>0<>0<><>::uid://bnwbh0l5kw86n::::res://in_game_ui.gd<>uid://diw2ksy15ntxj::::res://Icons/Chapter.png<>uid://bbmhvki63hkqj::::res://Icons/Index.png<>uid://tgn3w0njnhoq::::res://Icons/Inventory.png<>uid://bt54oavoqvhb6::::res://Icons/Character.png<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://haaebqb7ldc7::::res://Icons/Menu.png<>uid://dleqlif4l4w60::::res://Icons/Robot.png<>uid://ds0odsyrbdi38::::res://Icons/to-do-list.png
+keybind_ui.tscn::PackedScene::1157566045653166755::1751469404::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+login_menu_interface.gd::GDScript::2435241002452107394::1751469238::0::1::::<>Control<><>0<>0<><>::
+login_menu_interface.tscn::PackedScene::7762570662363539253::1751469404::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png<>uid://baxwcfoql7tw1::::res://login_menu_interface.gd<>uid://dklwqol80rtf1::::res://Icons/google-logo-icon.png<>uid://vuxk6w6rx6el::::res://Icons/eye.png
+main_menu_screen.gd::GDScript::2160542339531135671::1751469404::0::1::::<>Node2D<><>0<>0<><>::
+main_menu_screen.tscn::PackedScene::1880217137613345234::1751469404::0::1::::<><><>0<>0<><>::uid://bmfgphpa4lamx::::res://MainMenuUI_Resouces/CodeCraftLogoutButtonScreen.png<>uid://51t21crnditj::::res://main_menu_screen.gd<>uid://b7jervevnrvjx::::res://MainMenuUI_Resouces/ExampleVideo/ExampleIntroVideo.ogv<>uid://dumns6leuo3w6::::res://MainMenuUI_Resouces/CodeCraftMenuButtonScreen.png<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+menu_ui.gd::GDScript::3992017085993115749::1751467251::0::1::::<>Control<><>0<>0<><>::
+menu_ui.tscn::PackedScene::3818853487959867147::1751469404::0::1::::<><><>0<>0<><>::uid://bw4065rwcxrjx::::res://menu_ui.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png
+quit_interface.tscn::PackedScene/PackedScene::3551464454042857386::1751463185::0::1::::<><><>0<>0<><>::uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+register_menu_interface.gd::GDScript::8965811968481993854::1751468879::0::1::::<>Control<><>0<>0<><>::
+register_menu_interface.tscn::PackedScene::6775948718071723580::1751469404::0::1::::<><><>0<>0<><>::uid://d00du34gnwgv3::::res://register_menu_interface.gd<>uid://dm84f7dhamw11::::res://Fonts/OriginTech.otf<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf<>uid://cw8ul2t3t06d6::::res://Icons/close.png<>uid://vuxk6w6rx6el::::res://Icons/eye.png
+settings_ui.gd::GDScript::484257249022210595::1751545364::0::1::::<>Control<><>0<>0<><>::
+settings_ui.tscn::PackedScene::9066360138547967819::1751469404::0::1::::<><><>0<>0<><>::uid://g5tv76531l8f::::res://settings_ui.gd<>uid://dyar6fh26gmft::::res://Fonts/Inter Extra Bold 800.otf
+::res://Fonts/::1751035418
+Inter Extra Bold 800.otf::FontFile/FontFile::8844882121578976429::1751020665::1751020665::1::::<><><>0<>0<>7c087625cbc269202f45b38e8d4adaa5<>res://.godot/imported/Inter Extra Bold 800.otf-f28acb16067a6dd38ab0c377cdfb344c.fontdata::
+OriginTech.otf::FontFile/FontFile::8071424048079580134::1751035417::1751035417::1::::<><><>0<>0<>c3998f3fc113781e6ccfcb5ff2d1bf1a<>res://.godot/imported/OriginTech.otf-76bb7e99b87c055ffcd0603cb6cf7b0f.fontdata::
+::res://Globals/::1751469117
+UI_Signals.gd::GDScript::6850211288056990354::1751469117::0::1::::<>Node<><>0<>0<><>::
+::res://Icons/::1751129984
+BurgerButton.png::CompressedTexture2D/CompressedTexture2D::8518328496785028209::1751020665::1751020665::1::::<><><>0<>0<>0810a3099172df582add8379958f799c<>res://.godot/imported/BurgerButton.png-226e52d6110c6ee10fe2d2fb11448b50.ctex::
+Chapter.png::CompressedTexture2D/CompressedTexture2D::7767847311234174187::1751020665::1751020665::1::::<><><>0<>0<>0655462ca93b808551106dfc438acaf3<>res://.godot/imported/Chapter.png-a0bbb20f247819f134ccb7e4a03a714f.ctex::
+Character.png::CompressedTexture2D/CompressedTexture2D::3783725872441609221::1751020665::1751020665::1::::<><><>0<>0<>6c5a830c05f5b2ee9c8e780b6aab9c63<>res://.godot/imported/Character.png-5405a50cf0c4688aff3c7d75ea811cfb.ctex::
+close.png::CompressedTexture2D/CompressedTexture2D::6386355825675508921::1751020665::1751020665::1::::<><><>0<>0<>da71b738002a5421d1e9845807d04e6e<>res://.godot/imported/close.png-3950c06e2fe8d0422af3c02aa5eddb44.ctex::
+eye.png::CompressedTexture2D/CompressedTexture2D::1516669283894260663::1751020665::1751020665::1::::<><><>0<>0<>03b67b0ae80e5a072ccc96c088e09d86<>res://.godot/imported/eye.png-bc9b4e841c04cbf4a89d1170612aef97.ctex::
+eyehidden.png::CompressedTexture2D/CompressedTexture2D::8234730262820868419::1751020665::1751020665::1::::<><><>0<>0<>2cd852fce88676b6d4f22eb4a126596e<>res://.godot/imported/eyehidden.png-ef35b1ce1679ce74768c11b64c12faa9.ctex::
+google-logo-icon.png::CompressedTexture2D/CompressedTexture2D::7885223743150843400::1751129983::1751129984::1::::<><><>0<>0<>7da9c57426515afb994b844d7668ce42<>res://.godot/imported/google-logo-icon.png-7c333604c4a6a91f109db36c8c68b1d9.ctex::
+I-removebg.png::CompressedTexture2D/CompressedTexture2D::312331787535278883::1751020665::1751020665::1::::<><><>0<>0<>b71479913610410fdd7c05157c25e59d<>res://.godot/imported/I-removebg.png-6ad23dcbf7a6f5273a68168f8756bcdb.ctex::
+Index.png::CompressedTexture2D/CompressedTexture2D::2481845120039358377::1751020665::1751020665::1::::<><><>0<>0<>5be28972588b1469784119bb4012ab66<>res://.godot/imported/Index.png-256f7f2a411bf60d8d5c79505c214104.ctex::
+Inventory.png::CompressedTexture2D/CompressedTexture2D::1346814813519295712::1751020665::1751020665::1::::<><><>0<>0<>b5e4c448b1b21b3211d37ed3b8c550f3<>res://.godot/imported/Inventory.png-69c49848f9990d9bd0d99e3ab3284a71.ctex::
+LogoutButton.png::CompressedTexture2D/CompressedTexture2D::4192040515139486832::1751020665::1751020665::1::::<><><>0<>0<>a70b767a461f59bb80b7e43b8a6166a9<>res://.godot/imported/LogoutButton.png-bc90cde1dae731e7865ff301e66572a0.ctex::
+Menu.png::CompressedTexture2D/CompressedTexture2D::491329125970701160::1751020665::1751020665::1::::<><><>0<>0<>d2b28a80cef4b488f2f2782796d16f23<>res://.godot/imported/Menu.png-559ea471b43a5177e5cce6fd2e37ad17.ctex::
+ProgressBar.png::CompressedTexture2D/CompressedTexture2D::4196024712911094705::1751020665::1751020665::1::::<><><>0<>0<>ea6136573be4bdac4a410ec2258fc309<>res://.godot/imported/ProgressBar.png-52d6fd7d6143c8db528a0e133c59dcd8.ctex::
+ProgressBarWhite.png::CompressedTexture2D/CompressedTexture2D::3050588680730907047::1751020665::1751020665::1::::<><><>0<>0<>45ee71df903c0d51e85b151ab92fc0f2<>res://.godot/imported/ProgressBarWhite.png-ddf86155f36510b8e9af6a610e9c1027.ctex::
+Robot.png::CompressedTexture2D/CompressedTexture2D::7940588386975432327::1751020665::1751020665::1::::<><><>0<>0<>957253b3302a84cb7d68067630659285<>res://.godot/imported/Robot.png-3d65abadd56b063e56def25e35863141.ctex::
+to-do-list.png::CompressedTexture2D/CompressedTexture2D::8475127058965300929::1751020665::1751020665::1::::<><><>0<>0<>f99a18e217e8191a6dd10fa74997544f<>res://.godot/imported/to-do-list.png-a94a9a184a8085012980f23a56b4bac1.ctex::
+Z-removebg.png::CompressedTexture2D/CompressedTexture2D::8789757615221107503::1751020665::1751020665::1::::<><><>0<>0<>0729d28ea3422234e2e0ae12f588c27f<>res://.godot/imported/Z-removebg.png-928448a6df1aa3116d9d4e10a3c5c510.ctex::
+::res://MainMenuUI_Resouces/::1751022173
+CodeCraftLogoutButtonScreen.png::CompressedTexture2D/CompressedTexture2D::3239400175859664535::1751020665::1751020665::1::::<><><>0<>0<>f3bf3edc6d545109f553321d474e0f54<>res://.godot/imported/CodeCraftLogoutButtonScreen.png-b9eb0256a7930109a6d5ffa644777013.ctex::
+CodeCraftMenuButtonScreen.png::CompressedTexture2D/CompressedTexture2D::8588634567510675179::1751020665::1751020665::1::::<><><>0<>0<>14648c820521085bcfa3ff229b5cc58e<>res://.godot/imported/CodeCraftMenuButtonScreen.png-df412cdd4a9de10ba4992096b25d32fb.ctex::
+::res://MainMenuUI_Resouces/ExampleVideo/::1751022173
+ExampleIntroVideo.ogv::VideoStreamTheora/VideoStreamTheora::4651317416505904149::1751022173::0::1::::<><><>0<>0<><>::
