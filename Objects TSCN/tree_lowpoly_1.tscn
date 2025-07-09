@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://jotedirvqfa2"]
+
+[ext_resource type="PackedScene" uid="uid://cyj0bnhxlmh5e" path="res://Objects/treeLowpoly1.glb" id="1_hog0a"]
+[ext_resource type="Shader" uid="uid://dgxtt1ybrsnw1" path="res://Objects/toon.tres" id="2_1hw40"]
+[ext_resource type="Texture2D" uid="uid://dbownsndodm7i" path="res://Objects/Colors/base(UPDATED)FOROBJECTS.png" id="3_qshcg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xrp0a"]
+render_priority = 0
+shader = ExtResource("2_1hw40")
+shader_parameter/Albedo = ExtResource("3_qshcg")
+
+[node name="treeLowpoly1" instance=ExtResource("1_hog0a")]
+
+[node name="Cone" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_xrp0a")

@@ -1,0 +1,36 @@
+[gd_scene load_steps=9 format=3 uid="uid://s7mnkcvtducp"]
+
+[ext_resource type="PackedScene" uid="uid://f5twyq0dqp8k" path="res://Objects/Console.glb" id="1_k31vt"]
+[ext_resource type="Shader" uid="uid://dgxtt1ybrsnw1" path="res://Objects/toon.tres" id="2_npbse"]
+[ext_resource type="Texture2D" uid="uid://qgwa0828vmk" path="res://Objects/Colors/keyboard.png" id="3_upx4j"]
+[ext_resource type="Texture2D" uid="uid://dlgskpbbvsqub" path="res://Objects/Colors/panel.png" id="4_lb6qh"]
+[ext_resource type="Texture2D" uid="uid://dbownsndodm7i" path="res://Objects/Colors/base(UPDATED)FOROBJECTS.png" id="5_8r1ne"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_drv3x"]
+render_priority = 0
+shader = ExtResource("2_npbse")
+shader_parameter/Albedo = ExtResource("3_upx4j")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vdgj7"]
+render_priority = 0
+shader = ExtResource("2_npbse")
+shader_parameter/Albedo = ExtResource("4_lb6qh")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ncyv5"]
+render_priority = 0
+shader = ExtResource("2_npbse")
+shader_parameter/Albedo = ExtResource("5_8r1ne")
+
+[node name="Console" instance=ExtResource("1_k31vt")]
+
+[node name="Keyboard" parent="Empty" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_drv3x")
+
+[node name="Panel" parent="Empty" index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_vdgj7")
+
+[node name="Terminal" parent="Empty" index="2"]
+surface_material_override/0 = SubResource("ShaderMaterial_ncyv5")
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "IdleTerminal"

@@ -5,7 +5,6 @@ var login_ui = preload("res://login_menu_interface.tscn")
 var register_ui = preload("res://register_menu_interface.tscn")
 var forgot_ui = preload("res://forgot_password_interface.tscn")
 
-
 var is_login_ui_open = false 
 var is_register_open = false
 var is_forgot_open = false
