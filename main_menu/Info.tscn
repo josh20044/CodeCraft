@@ -1,8 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://bf3ware71akrx"]
+[gd_scene load_steps=19 format=3 uid="uid://bf3ware71akrx"]
 
 [ext_resource type="FontFile" uid="uid://bgal16fumeigc" path="res://main_menu/images/Inter-VariableFont_opsz,wght.ttf" id="2_m1ro8"]
 [ext_resource type="Texture2D" uid="uid://crm0wqby2uv0i" path="res://main_menu/images/X_btn.png" id="3_1lxsw"]
-[ext_resource type="Texture2D" uid="uid://cy1gxpv776wtx" path="res://Icons/return.png" id="4_n2u7i"]
+[ext_resource type="Texture2D" uid="uid://2j7qwsnfnx1c" path="res://Icons/return.png" id="4_n2u7i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2u7i"]
+bg_color = Color(0.24, 0.24, 0.24, 0.27451)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lxsw"]
 bg_color = Color(0.164706, 0.164706, 0.164706, 0.823529)
@@ -139,180 +142,195 @@ anti_aliasing_size = 0.01
 
 [node name="Info" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_left = 420.0
-offset_top = 116.0
-offset_right = 420.0
-offset_bottom = 116.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n2u7i")
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = 14.0
-offset_top = 11.0
-offset_right = 428.0
-offset_bottom = 455.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.0
+offset_top = -222.0
+offset_right = 207.0
+offset_bottom = 222.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_1lxsw")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 67.0
-offset_top = 78.0
-offset_right = 381.0
-offset_bottom = 81.0
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 67.0
+offset_right = 367.0
+offset_bottom = 70.0
 theme = SubResource("Theme_n2u7i")
 
-[node name="INFORMATION" type="Label" parent="."]
+[node name="INFORMATION" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 172.0
-offset_top = 33.0
-offset_right = 284.0
-offset_bottom = 56.0
+offset_left = 151.0
+offset_top = 26.0
+offset_right = 263.0
+offset_bottom = 49.0
 text = "INFORMATION"
 label_settings = SubResource("LabelSettings_1lxsw")
 
-[node name="Curr_Module" type="Label" parent="."]
+[node name="Curr_Module" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 50.0
-offset_top = 102.0
-offset_right = 181.0
-offset_bottom = 125.0
+offset_left = 36.0
+offset_top = 91.0
+offset_right = 167.0
+offset_bottom = 114.0
 text = "Current Module :"
 label_settings = SubResource("LabelSettings_n2u7i")
 
-[node name="Curr_Module_Val" type="Label" parent="Curr_Module"]
+[node name="Curr_Module_Val" type="Label" parent="Panel/Curr_Module"]
 layout_mode = 0
 offset_left = 135.0
-offset_top = 1.0
 offset_right = 327.0
-offset_bottom = 24.0
-text = "Variables"
+offset_bottom = 23.0
+text = "N/A"
 label_settings = SubResource("LabelSettings_86dqb")
 
-[node name="Completion_Rate" type="Label" parent="."]
+[node name="Completion_Rate" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 50.0
-offset_top = 140.0
-offset_right = 184.0
-offset_bottom = 163.0
+offset_left = 36.0
+offset_top = 129.0
+offset_right = 170.0
+offset_bottom = 152.0
 text = "Completion Rate :"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Completion_Rate_Val" type="Label" parent="Completion_Rate"]
+[node name="Completion_Rate_Val" type="Label" parent="Panel/Completion_Rate"]
 layout_mode = 0
 offset_left = 141.0
 offset_right = 329.0
 offset_bottom = 23.0
-text = "75%"
+text = "0%"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Last_Concept_Attempt" type="Label" parent="."]
+[node name="Last_Concept_Attempt" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 50.0
-offset_top = 177.0
-offset_right = 243.0
-offset_bottom = 200.0
-text = "Last Concept Attempted :"
+offset_left = 36.0
+offset_top = 166.0
+offset_right = 229.0
+offset_bottom = 189.0
+text = "Last Lesson Attempted :"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Last_Concept_Attempt_Val" type="Label" parent="Last_Concept_Attempt"]
+[node name="Last_Concept_Attempt_Val" type="Label" parent="Panel/Last_Concept_Attempt"]
 layout_mode = 0
-offset_left = 198.0
-offset_top = 1.0
-offset_right = 377.0
-offset_bottom = 24.0
-text = "Declaring Variables"
+offset_left = 187.0
+offset_right = 366.0
+offset_bottom = 23.0
+text = "N/A"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Common_Mistake" type="Label" parent="."]
+[node name="Common_Mistake" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 50.0
-offset_top = 212.0
-offset_right = 195.0
-offset_bottom = 235.0
+offset_left = 36.0
+offset_top = 201.0
+offset_right = 181.0
+offset_bottom = 224.0
 text = "Common Mistake :"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Common_Mistake_Val" type="Label" parent="Common_Mistake"]
+[node name="Common_Mistake_Val" type="Label" parent="Panel/Common_Mistake"]
 layout_mode = 0
-offset_left = 144.0
-offset_right = 369.0
+offset_left = 145.0
+offset_right = 370.0
 offset_bottom = 23.0
-text = "Used == instead of ="
+text = "N/A"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Average_Time" type="Label" parent="."]
+[node name="Average_Time" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 49.0
-offset_top = 250.0
-offset_right = 232.0
-offset_bottom = 273.0
+offset_left = 35.0
+offset_top = 239.0
+offset_right = 218.0
+offset_bottom = 262.0
 text = "Average Time per Task :"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Average_Time_Val" type="Label" parent="Average_Time"]
+[node name="Average_Time_Val" type="Label" parent="Panel/Average_Time"]
 layout_mode = 0
-offset_left = 186.0
-offset_right = 378.0
+offset_left = 188.0
+offset_right = 380.0
 offset_bottom = 23.0
-text = "2 min & 12 sec"
+text = "N/A"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Needs_Review_in" type="Label" parent="."]
+[node name="Needs_Review_in" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 51.0
-offset_top = 290.0
-offset_right = 198.0
-offset_bottom = 313.0
-text = "Needs Review in :"
+offset_left = 37.0
+offset_top = 279.0
+offset_right = 184.0
+offset_bottom = 302.0
+text = "Need Review in :"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Needs_Review_in_Val" type="Label" parent="Needs_Review_in"]
+[node name="Needs_Review_in_Val" type="Label" parent="Panel/Needs_Review_in"]
 layout_mode = 0
-offset_left = 143.0
-offset_top = -2.0
-offset_right = 368.0
-offset_bottom = 21.0
-text = "Placeholder"
+offset_left = 131.0
+offset_right = 356.0
+offset_bottom = 23.0
+text = "N/A"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Last_Assess_Score" type="Label" parent="."]
+[node name="Last_Assess_Score" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 50.0
-offset_top = 327.0
-offset_right = 237.0
-offset_bottom = 350.0
+offset_left = 36.0
+offset_top = 316.0
+offset_right = 223.0
+offset_bottom = 339.0
 text = "Last Assessment Score :"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Last_Assess_Score_Val" type="Label" parent="Last_Assess_Score"]
+[node name="Last_Assess_Score_Val" type="Label" parent="Panel/Last_Assess_Score"]
 layout_mode = 0
-offset_left = 188.0
-offset_right = 381.0
+offset_left = 190.0
+offset_right = 355.0
 offset_bottom = 23.0
-text = "78%"
+text = "N/A"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Attempts_on_last_task" type="Label" parent="."]
+[node name="Attempts_on_last_task" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 49.0
-offset_top = 367.0
-offset_right = 236.0
-offset_bottom = 390.0
-text = "Attempts on Last Task"
+offset_left = 35.0
+offset_top = 356.0
+offset_right = 222.0
+offset_bottom = 379.0
+text = "Attempts on Last Task : "
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="Attempts_on_last_task_Val" type="Label" parent="Attempts_on_last_task"]
+[node name="Attempts_on_last_task_Val" type="Label" parent="Panel/Attempts_on_last_task"]
 layout_mode = 0
-offset_left = 177.0
-offset_top = 2.0
-offset_right = 370.0
-offset_bottom = 25.0
-text = "3"
+offset_left = 183.0
+offset_right = 329.0
+offset_bottom = 23.0
+text = "N/A"
 label_settings = SubResource("LabelSettings_iodl7")
 
-[node name="X_btn" type="Button" parent="."]
-offset_left = 384.0
-offset_top = 33.0
-offset_right = 407.0
-offset_bottom = 55.0
+[node name="X_btn" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 22.0
+offset_right = 393.0
+offset_bottom = 44.0
 theme_override_icons/icon = ExtResource("3_1lxsw")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_n2u7i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_86dqb")
@@ -321,11 +339,12 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_lycvn")
 icon_alignment = 1
 expand_icon = true
 
-[node name="return_btn" type="Button" parent="."]
-offset_left = 40.0
-offset_top = 35.0
-offset_right = 64.0
-offset_bottom = 59.0
+[node name="return_btn" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 24.0
+offset_right = 50.0
+offset_bottom = 48.0
 theme_override_icons/icon = ExtResource("4_n2u7i")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_86dqb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5qtmm")
