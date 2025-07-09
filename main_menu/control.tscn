@@ -1,0 +1,261 @@
+[gd_scene load_steps=4 format=3 uid="uid://xq0yqlxh2twi"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_5m8r0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_puvwb"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_4oist"]
+font = ExtResource("1_5m8r0")
+font_size = 12
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 31.0
+offset_right = 664.0
+offset_bottom = 444.0
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 5
+
+[node name="Storage_1" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn1" type="Button" parent="GridContainer/Storage_1"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_qty1" type="Label" parent="GridContainer/Storage_1"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 30.0
+offset_right = 48.0
+offset_bottom = 45.0
+text = "4"
+label_settings = SubResource("LabelSettings_4oist")
+horizontal_alignment = 1
+
+[node name="Storage_2" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn2" type="Button" parent="GridContainer/Storage_2"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_qty2" type="Label" parent="GridContainer/Storage_2"]
+offset_left = 28.0
+offset_top = 30.0
+offset_right = 48.0
+offset_bottom = 45.0
+label_settings = SubResource("LabelSettings_4oist")
+horizontal_alignment = 1
+
+[node name="Storage_3" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn3" type="Button" parent="GridContainer/Storage_3"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_qty3" type="Label" parent="GridContainer/Storage_3"]
+offset_left = 28.0
+offset_top = 30.0
+offset_right = 48.0
+offset_bottom = 45.0
+text = "4"
+label_settings = SubResource("LabelSettings_4oist")
+horizontal_alignment = 1
+
+[node name="Storage_4" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn4" type="Button" parent="GridContainer/Storage_4"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_5" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn5" type="Button" parent="GridContainer/Storage_5"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_6" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn6" type="Button" parent="GridContainer/Storage_6"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_7" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn7" type="Button" parent="GridContainer/Storage_7"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_8" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn8" type="Button" parent="GridContainer/Storage_8"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_9" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn9" type="Button" parent="GridContainer/Storage_9"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_10" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn10" type="Button" parent="GridContainer/Storage_10"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_11" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn11" type="Button" parent="GridContainer/Storage_11"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_12" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn12" type="Button" parent="GridContainer/Storage_12"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_13" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn13" type="Button" parent="GridContainer/Storage_13"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_14" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn14" type="Button" parent="GridContainer/Storage_14"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_15" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn15" type="Button" parent="GridContainer/Storage_15"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_16" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn16" type="Button" parent="GridContainer/Storage_16"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_17" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn17" type="Button" parent="GridContainer/Storage_17"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_18" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn18" type="Button" parent="GridContainer/Storage_18"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_19" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn19" type="Button" parent="GridContainer/Storage_19"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true
+
+[node name="Storage_20" type="Panel" parent="GridContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
+
+[node name="Storage_btn20" type="Button" parent="GridContainer/Storage_20"]
+modulate = Color(1, 0, 0, 1)
+offset_right = 48.0
+offset_bottom = 48.0
+flat = true

@@ -1,0 +1,335 @@
+[gd_scene load_steps=18 format=3 uid="uid://bf3ware71akrx"]
+
+[ext_resource type="FontFile" uid="uid://bgal16fumeigc" path="res://main_menu/images/Inter-VariableFont_opsz,wght.ttf" id="2_m1ro8"]
+[ext_resource type="Texture2D" uid="uid://crm0wqby2uv0i" path="res://main_menu/images/X_btn.png" id="3_1lxsw"]
+[ext_resource type="Texture2D" uid="uid://cy1gxpv776wtx" path="res://Icons/return.png" id="4_n2u7i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lxsw"]
+bg_color = Color(0.164706, 0.164706, 0.164706, 0.823529)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+anti_aliasing = false
+
+[sub_resource type="Theme" id="Theme_n2u7i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1lxsw"]
+font = ExtResource("2_m1ro8")
+outline_size = 1
+
+[sub_resource type="LabelSettings" id="LabelSettings_n2u7i"]
+font = ExtResource("2_m1ro8")
+outline_size = 1
+
+[sub_resource type="LabelSettings" id="LabelSettings_86dqb"]
+font = ExtResource("2_m1ro8")
+outline_size = 1
+
+[sub_resource type="LabelSettings" id="LabelSettings_iodl7"]
+font = ExtResource("2_m1ro8")
+outline_size = 1
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n2u7i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_86dqb"]
+bg_color = Color(0.282353, 0.282353, 0.282353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.568973, 0.568973, 0.568973, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iodl7"]
+bg_color = Color(0.164706, 0.164706, 0.164706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lycvn"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.381703, 0.381703, 0.381703, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_86dqb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5qtmm"]
+bg_color = Color(0.282353, 0.282353, 0.282353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.568973, 0.568973, 0.568973, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_465we"]
+bg_color = Color(0.164706, 0.164706, 0.164706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ysj0"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.381703, 0.381703, 0.381703, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[node name="Info" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 420.0
+offset_top = 116.0
+offset_right = 420.0
+offset_bottom = 116.0
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 14.0
+offset_top = 11.0
+offset_right = 428.0
+offset_bottom = 455.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1lxsw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 67.0
+offset_top = 78.0
+offset_right = 381.0
+offset_bottom = 81.0
+theme = SubResource("Theme_n2u7i")
+
+[node name="INFORMATION" type="Label" parent="."]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 33.0
+offset_right = 284.0
+offset_bottom = 56.0
+text = "INFORMATION"
+label_settings = SubResource("LabelSettings_1lxsw")
+
+[node name="Curr_Module" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 102.0
+offset_right = 181.0
+offset_bottom = 125.0
+text = "Current Module :"
+label_settings = SubResource("LabelSettings_n2u7i")
+
+[node name="Curr_Module_Val" type="Label" parent="Curr_Module"]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 1.0
+offset_right = 327.0
+offset_bottom = 24.0
+text = "Variables"
+label_settings = SubResource("LabelSettings_86dqb")
+
+[node name="Completion_Rate" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 140.0
+offset_right = 184.0
+offset_bottom = 163.0
+text = "Completion Rate :"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Completion_Rate_Val" type="Label" parent="Completion_Rate"]
+layout_mode = 0
+offset_left = 141.0
+offset_right = 329.0
+offset_bottom = 23.0
+text = "75%"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Last_Concept_Attempt" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 177.0
+offset_right = 243.0
+offset_bottom = 200.0
+text = "Last Concept Attempted :"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Last_Concept_Attempt_Val" type="Label" parent="Last_Concept_Attempt"]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 1.0
+offset_right = 377.0
+offset_bottom = 24.0
+text = "Declaring Variables"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Common_Mistake" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 212.0
+offset_right = 195.0
+offset_bottom = 235.0
+text = "Common Mistake :"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Common_Mistake_Val" type="Label" parent="Common_Mistake"]
+layout_mode = 0
+offset_left = 144.0
+offset_right = 369.0
+offset_bottom = 23.0
+text = "Used == instead of ="
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Average_Time" type="Label" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 250.0
+offset_right = 232.0
+offset_bottom = 273.0
+text = "Average Time per Task :"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Average_Time_Val" type="Label" parent="Average_Time"]
+layout_mode = 0
+offset_left = 186.0
+offset_right = 378.0
+offset_bottom = 23.0
+text = "2 min & 12 sec"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Needs_Review_in" type="Label" parent="."]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 290.0
+offset_right = 198.0
+offset_bottom = 313.0
+text = "Needs Review in :"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Needs_Review_in_Val" type="Label" parent="Needs_Review_in"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = -2.0
+offset_right = 368.0
+offset_bottom = 21.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Last_Assess_Score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 327.0
+offset_right = 237.0
+offset_bottom = 350.0
+text = "Last Assessment Score :"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Last_Assess_Score_Val" type="Label" parent="Last_Assess_Score"]
+layout_mode = 0
+offset_left = 188.0
+offset_right = 381.0
+offset_bottom = 23.0
+text = "78%"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Attempts_on_last_task" type="Label" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 367.0
+offset_right = 236.0
+offset_bottom = 390.0
+text = "Attempts on Last Task"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="Attempts_on_last_task_Val" type="Label" parent="Attempts_on_last_task"]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 2.0
+offset_right = 370.0
+offset_bottom = 25.0
+text = "3"
+label_settings = SubResource("LabelSettings_iodl7")
+
+[node name="X_btn" type="Button" parent="."]
+offset_left = 384.0
+offset_top = 33.0
+offset_right = 407.0
+offset_bottom = 55.0
+theme_override_icons/icon = ExtResource("3_1lxsw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n2u7i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_86dqb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iodl7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lycvn")
+icon_alignment = 1
+expand_icon = true
+
+[node name="return_btn" type="Button" parent="."]
+offset_left = 40.0
+offset_top = 35.0
+offset_right = 64.0
+offset_bottom = 59.0
+theme_override_icons/icon = ExtResource("4_n2u7i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_86dqb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5qtmm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_465we")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ysj0")
+icon_alignment = 1
+expand_icon = true
