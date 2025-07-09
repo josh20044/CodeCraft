@@ -285,6 +285,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_7est5")
 text = "LOGIN"
 
 [node name="GoogleSignInButton" type="Button" parent="Panel"]
+visible = false
 layout_mode = 0
 offset_left = 352.0
 offset_top = 255.0
