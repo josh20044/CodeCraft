@@ -1,0 +1,164 @@
+[gd_scene load_steps=6 format=3 uid="uid://ivlas4g7ofjj"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_ot76p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dceqa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uc231"]
+bg_color = Color(0.362829, 0.362829, 0.362829, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.364706, 0.364706, 0.364706, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mat3i"]
+bg_color = Color(0.281187, 0.281187, 0.281187, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2r3hv"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="VBoxContainer" type="VBoxContainer"]
+custom_minimum_size = Vector2(277, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TOPIC1" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 1"
+
+[node name="TOPIC2" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 2"
+
+[node name="TOPIC3" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 3"
+
+[node name="TOPIC4" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 4"
+
+[node name="TOPIC5" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 5"
+
+[node name="TOPIC6" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 6"
+
+[node name="TOPIC7" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 7"
+
+[node name="TOPIC8" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 8"
+
+[node name="TOPIC9" type="Button" parent="."]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_ot76p")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dceqa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mat3i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uc231")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2r3hv")
+disabled = true
+text = "TOPIC 9"
