@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://cayub61capq5d"]
+
+[ext_resource type="PackedScene" uid="uid://kyi8nldowa1h" path="res://Objects/iron.glb" id="1_gp4h5"]
+[ext_resource type="Shader" uid="uid://dgxtt1ybrsnw1" path="res://Objects/toon.tres" id="2_dovvm"]
+[ext_resource type="Texture2D" uid="uid://b7pjsvg7bvb4u" path="res://Objects/Colors/IronTexture.png" id="3_bgsya"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tcf17"]
+render_priority = 0
+shader = ExtResource("2_dovvm")
+shader_parameter/Albedo = ExtResource("3_bgsya")
+
+[node name="iron" instance=ExtResource("1_gp4h5")]
+
+[node name="Sphere" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_tcf17")

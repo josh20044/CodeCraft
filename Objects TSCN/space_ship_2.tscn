@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8xd53w6g3076"]
+
+[ext_resource type="PackedScene" uid="uid://db0febqi34756" path="res://Objects/SpaceShip.glb" id="1_voqas"]
+[ext_resource type="Shader" uid="uid://dgxtt1ybrsnw1" path="res://Objects/toon.tres" id="2_paagj"]
+[ext_resource type="Texture2D" uid="uid://dbownsndodm7i" path="res://Objects/Colors/base(UPDATED)FOROBJECTS.png" id="3_4n0lk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3d1fc"]
+render_priority = 0
+shader = ExtResource("2_paagj")
+shader_parameter/Albedo = ExtResource("3_4n0lk")
+
+[node name="SpaceShip2" instance=ExtResource("1_voqas")]
+
+[node name="SpaceShip" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_3d1fc")
