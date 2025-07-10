@@ -1,0 +1,568 @@
+[gd_scene load_steps=23 format=3 uid="uid://brum6h2m8b7cq"]
+
+[ext_resource type="Texture2D" uid="uid://bkqbgxvsfm8lu" path="res://Icons/drill.png" id="1_daj5u"]
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="2_hnn1m"]
+[ext_resource type="Texture2D" uid="uid://ci40cirvff0x8" path="res://Icons/ore.png" id="2_tr6jp"]
+[ext_resource type="Texture2D" uid="uid://2j7qwsnfnx1c" path="res://Icons/return.png" id="4_2jhpc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hxv4v"]
+bg_color = Color(0.16, 0.16, 0.16, 0.47451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr6jp"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hnn1m"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hnn1m"]
+load_path = "res://.godot/imported/lock.png-a7801be8c4368ec1232ddfa26511c5e1.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_awim5"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1osj2"]
+content_margin_left = 30.0
+content_margin_top = 30.0
+content_margin_right = 30.0
+content_margin_bottom = 30.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2jhpc"]
+load_path = "res://.godot/imported/lock.png-a7801be8c4368ec1232ddfa26511c5e1.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2cdi"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q2des"]
+content_margin_left = 30.0
+content_margin_top = 30.0
+content_margin_right = 30.0
+content_margin_bottom = 30.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2jhpc"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aewev"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aewev"]
+load_path = "res://.godot/imported/lock.png-a7801be8c4368ec1232ddfa26511c5e1.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0eyal"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4hvv"]
+content_margin_left = 30.0
+content_margin_top = 30.0
+content_margin_right = 30.0
+content_margin_bottom = 30.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aewev"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vbvqw"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.282353, 0.282353, 0.282353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.568973, 0.568973, 0.568973, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4a0kh"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.164706, 0.164706, 0.164706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opr7j"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.381703, 0.381703, 0.381703, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[node name="SkillTree" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1281.0
+offset_bottom = 717.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hxv4v")
+metadata/_edit_lock_ = true
+
+[node name="Drills" type="Button" parent="."]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 519.0
+offset_right = 461.0
+offset_bottom = 635.0
+theme_override_icons/icon = ExtResource("1_daj5u")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tr6jp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hnn1m")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hnn1m")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hnn1m")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Drill_lvl_tag" type="Label" parent="Drills"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 87.0
+offset_right = 14.0
+offset_bottom = 108.0
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 1"
+vertical_alignment = 1
+
+[node name="Drill_tag" type="Label" parent="Drills"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.161
+anchor_top = 1.233
+anchor_right = -0.161
+anchor_bottom = 1.233
+offset_left = -0.0359993
+offset_top = -11.028
+offset_right = 167.964
+offset_bottom = 11.972
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "DRILLS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Drills"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = -114.0
+offset_right = 62.0
+
+[node name="Drill_lvl2" type="Button" parent="Drills"]
+layout_mode = 0
+offset_top = -230.0
+offset_right = 124.0
+offset_bottom = -114.0
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_icons/icon = SubResource("CompressedTexture2D_hnn1m")
+theme_override_styles/focus = SubResource("StyleBoxFlat_awim5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1osj2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1osj2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1osj2")
+icon_alignment = 1
+expand_icon = true
+
+[node name="lvl2_tag" type="Label" parent="Drills/Drill_lvl2"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 87.0
+offset_right = 14.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 2"
+vertical_alignment = 1
+
+[node name="ColorRect2" type="ColorRect" parent="Drills"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = -285.0
+offset_right = 62.0
+offset_bottom = -229.0
+
+[node name="Drill_lvl3_1" type="Button" parent="Drills"]
+layout_mode = 0
+offset_left = -152.0
+offset_top = -484.0
+offset_right = -28.0
+offset_bottom = -368.0
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_icons/icon = SubResource("CompressedTexture2D_2jhpc")
+theme_override_styles/focus = SubResource("StyleBoxFlat_t2cdi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q2des")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q2des")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q2des")
+icon_alignment = 1
+expand_icon = true
+
+[node name="lvl3_tag_1" type="Label" parent="Drills/Drill_lvl3_1"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 87.0
+offset_right = 14.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 3"
+vertical_alignment = 1
+
+[node name="Drill_lvl3_2" type="Button" parent="Drills"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = -484.0
+offset_right = 272.0
+offset_bottom = -368.0
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_icons/icon = SubResource("CompressedTexture2D_2jhpc")
+theme_override_styles/focus = SubResource("StyleBoxFlat_t2cdi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q2des")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q2des")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q2des")
+icon_alignment = 1
+expand_icon = true
+
+[node name="lvl2" type="Label" parent="Drills/Drill_lvl3_2"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 87.0
+offset_right = 14.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 3"
+vertical_alignment = 1
+
+[node name="ColorRect4" type="ColorRect" parent="Drills"]
+layout_mode = 0
+offset_left = 210.0
+offset_top = -368.0
+offset_right = 212.0
+offset_bottom = -285.0
+
+[node name="ColorRect5" type="ColorRect" parent="Drills"]
+layout_mode = 0
+offset_left = -91.0
+offset_top = -368.0
+offset_right = -89.0
+offset_bottom = -284.0
+
+[node name="ColorRect3" type="ColorRect" parent="Drills"]
+layout_mode = 0
+offset_left = 212.0
+offset_top = -285.0
+offset_right = 214.0
+offset_bottom = 18.0
+rotation = 1.5708
+
+[node name="Ores" type="Button" parent="."]
+layout_mode = 0
+offset_left = 830.0
+offset_top = 519.0
+offset_right = 954.0
+offset_bottom = 635.0
+theme_override_icons/icon = ExtResource("2_tr6jp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2jhpc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_aewev")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_aewev")
+theme_override_styles/normal = SubResource("StyleBoxFlat_aewev")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Ores_tag" type="Label" parent="Ores"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = 132.0
+offset_right = 144.0
+offset_bottom = 155.0
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "ORES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lvl1_tag" type="Label" parent="Ores"]
+layout_mode = 0
+offset_left = -63.0
+offset_top = 87.0
+offset_right = 29.0
+offset_bottom = 110.0
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 1 "
+
+[node name="Ore_lvl2" type="Button" parent="Ores"]
+layout_mode = 0
+offset_top = -230.0
+offset_right = 124.0
+offset_bottom = -114.0
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_icons/icon = SubResource("CompressedTexture2D_hnn1m")
+theme_override_styles/focus = SubResource("StyleBoxFlat_awim5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1osj2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1osj2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1osj2")
+icon_alignment = 1
+expand_icon = true
+
+[node name="lvl2_tag" type="Label" parent="Ores/Ore_lvl2"]
+layout_mode = 0
+offset_left = -51.0
+offset_top = 87.0
+offset_right = 21.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 3"
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Ores"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = -114.0
+offset_right = 62.0
+
+[node name="Ore_lvl3_1" type="Button" parent="Ores"]
+layout_mode = 0
+offset_left = -149.0
+offset_top = -484.0
+offset_right = -25.0
+offset_bottom = -368.0
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_icons/icon = SubResource("CompressedTexture2D_aewev")
+theme_override_styles/focus = SubResource("StyleBoxFlat_0eyal")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v4hvv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v4hvv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_v4hvv")
+icon_alignment = 1
+expand_icon = true
+
+[node name="lvl3_tag_1" type="Label" parent="Ores/Ore_lvl3_1"]
+layout_mode = 0
+offset_left = -53.0
+offset_top = 87.0
+offset_right = 19.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 3"
+vertical_alignment = 1
+
+[node name="Ore_lvl3_2" type="Button" parent="Ores"]
+layout_mode = 0
+offset_left = 151.0
+offset_top = -484.0
+offset_right = 275.0
+offset_bottom = -368.0
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_icons/icon = SubResource("CompressedTexture2D_aewev")
+theme_override_styles/focus = SubResource("StyleBoxFlat_0eyal")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v4hvv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v4hvv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_v4hvv")
+icon_alignment = 1
+expand_icon = true
+
+[node name="lvl3_tag_2" type="Label" parent="Ores/Ore_lvl3_2"]
+layout_mode = 0
+offset_left = -57.0
+offset_top = 87.0
+offset_right = 15.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 16
+text = "LVL 3"
+vertical_alignment = 1
+
+[node name="ColorRect4" type="ColorRect" parent="Ores"]
+layout_mode = 0
+offset_left = 213.0
+offset_top = -368.0
+offset_right = 215.0
+offset_bottom = -285.0
+
+[node name="ColorRect5" type="ColorRect" parent="Ores"]
+layout_mode = 0
+offset_left = -88.0
+offset_top = -368.0
+offset_right = -86.0
+offset_bottom = -284.0
+
+[node name="ColorRect3" type="ColorRect" parent="Ores"]
+layout_mode = 0
+offset_left = 215.0
+offset_top = -285.0
+offset_right = 217.0
+offset_bottom = 18.0
+rotation = 1.5708
+
+[node name="ColorRect2" type="ColorRect" parent="Ores"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = -285.0
+offset_right = 62.0
+offset_bottom = -229.0
+
+[node name="return_btn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1202.0
+offset_top = 35.0
+offset_right = 1235.0
+offset_bottom = 69.0
+theme_override_icons/icon = ExtResource("4_2jhpc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_aewev")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vbvqw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4a0kh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_opr7j")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Skills_tag" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1151.0
+offset_top = 662.0
+offset_right = 1254.0
+offset_bottom = 699.0
+theme_override_fonts/font = ExtResource("2_hnn1m")
+theme_override_font_sizes/font_size = 30
+text = "SKILLS"
+vertical_alignment = 1

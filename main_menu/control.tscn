@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://xq0yqlxh2twi"]
+[gd_scene load_steps=4 format=3 uid="uid://hqtwoq0dqs2j"]
 
 [ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_5m8r0"]
 
@@ -56,11 +56,13 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn2" type="Button" parent="GridContainer/Storage_2"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
 
 [node name="Storage_qty2" type="Label" parent="GridContainer/Storage_2"]
+layout_mode = 0
 offset_left = 28.0
 offset_top = 30.0
 offset_right = 48.0
@@ -74,11 +76,13 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn3" type="Button" parent="GridContainer/Storage_3"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
 
 [node name="Storage_qty3" type="Label" parent="GridContainer/Storage_3"]
+layout_mode = 0
 offset_left = 28.0
 offset_top = 30.0
 offset_right = 48.0
@@ -93,6 +97,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn4" type="Button" parent="GridContainer/Storage_4"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -103,6 +108,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn5" type="Button" parent="GridContainer/Storage_5"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -124,6 +130,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn7" type="Button" parent="GridContainer/Storage_7"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -134,6 +141,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn8" type="Button" parent="GridContainer/Storage_8"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -144,6 +152,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn9" type="Button" parent="GridContainer/Storage_9"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -154,6 +163,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn10" type="Button" parent="GridContainer/Storage_10"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -175,6 +185,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn12" type="Button" parent="GridContainer/Storage_12"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -185,6 +196,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn13" type="Button" parent="GridContainer/Storage_13"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -195,6 +207,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn14" type="Button" parent="GridContainer/Storage_14"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -205,6 +218,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn15" type="Button" parent="GridContainer/Storage_15"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -226,6 +240,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn17" type="Button" parent="GridContainer/Storage_17"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -236,6 +251,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn18" type="Button" parent="GridContainer/Storage_18"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -246,6 +262,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn19" type="Button" parent="GridContainer/Storage_19"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
@@ -256,6 +273,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_puvwb")
 
 [node name="Storage_btn20" type="Button" parent="GridContainer/Storage_20"]
 modulate = Color(1, 0, 0, 1)
+layout_mode = 0
 offset_right = 48.0
 offset_bottom = 48.0
 flat = true
