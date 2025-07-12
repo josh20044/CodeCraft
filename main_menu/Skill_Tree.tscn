@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://brum6h2m8b7cq"]
+[gd_scene load_steps=24 format=3 uid="uid://brum6h2m8b7cq"]
 
+[ext_resource type="Script" uid="uid://bbog0gtkdivs" path="res://main_menu/skill_tree.gd" id="1_aewev"]
 [ext_resource type="Texture2D" uid="uid://bkqbgxvsfm8lu" path="res://Icons/drill.png" id="1_daj5u"]
 [ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="2_hnn1m"]
 [ext_resource type="Texture2D" uid="uid://ci40cirvff0x8" path="res://Icons/ore.png" id="2_tr6jp"]
@@ -208,6 +209,7 @@ anti_aliasing_size = 0.01
 [node name="SkillTree" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_aewev")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -566,3 +568,5 @@ theme_override_fonts/font = ExtResource("2_hnn1m")
 theme_override_font_sizes/font_size = 30
 text = "SKILLS"
 vertical_alignment = 1
+
+[connection signal="pressed" from="return_btn" to="." method="_on_return_btn_pressed"]

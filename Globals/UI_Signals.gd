@@ -13,6 +13,22 @@ signal close_register
 signal open_forgot
 signal close_forgot
 
+# ingame signals
+signal chapter_open
+signal chapter_close
+signal info_open
+signal info_close
+
+signal skill_open
+signal skill_close
+
+signal inv_open
+signal inv_close
+
+signal task_open
+signal task_close
+
+
 var signup_success = false
 
 var is_fullscreen = true

@@ -1,14 +1,12 @@
-[gd_scene load_steps=35 format=3 uid="uid://dbsyakt6fqodt"]
+[gd_scene load_steps=36 format=3 uid="uid://dbsyakt6fqodt"]
 
+[ext_resource type="Script" uid="uid://bqlpxg7kdhhmj" path="res://main_menu/inventory.gd" id="1_fws05"]
 [ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_ggri0"]
 [ext_resource type="Texture2D" uid="uid://6u5uhv2bx8qr" path="res://Icons/Search.png" id="2_04ney"]
 [ext_resource type="Texture2D" uid="uid://2j7qwsnfnx1c" path="res://Icons/return.png" id="3_5qw57"]
-<<<<<<< HEAD
-=======
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kt5hx"]
 bg_color = Color(0.24, 0.24, 0.24, 0.27451)
->>>>>>> 5863626f030deef6e807fc12b4768b6a4fb86f10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fup6u"]
 bg_color = Color(0.164706, 0.164706, 0.164706, 1)
@@ -206,6 +204,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fws05")
 metadata/_edit_vertical_guides_ = [680.0]
 
 [node name="Panel2" type="Panel" parent="."]
@@ -940,3 +939,5 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_xc558")
 theme_override_styles/normal = SubResource("StyleBoxFlat_jmece")
 icon_alignment = 1
 expand_icon = true
+
+[connection signal="pressed" from="Panel/return_btn" to="." method="_on_return_btn_pressed"]

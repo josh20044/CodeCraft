@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://ve1xeygd3oxc"]
 
 [ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_5re6n"]
-[ext_resource type="Texture2D" uid="uid://q3urhi3jr8xw" path="res://Icons/play.png" id="2_k0sej"]
+[ext_resource type="Texture2D" uid="uid://dtg8w7yiscglq" path="res://Icons/play.png" id="2_k0sej"]
 [ext_resource type="Texture2D" uid="uid://cplq271f33md2" path="res://Icons/pause.png" id="3_ba8ix"]
 [ext_resource type="Texture2D" uid="uid://jgjr4wgxkwti" path="res://Icons/redcircle.png" id="4_51ftd"]
 [ext_resource type="Texture2D" uid="uid://crm0wqby2uv0i" path="res://main_menu/images/X_btn.png" id="5_rl5n1"]
@@ -166,6 +166,7 @@ offset_bottom = 50.9742
 theme_override_styles/panel = SubResource("StyleBoxFlat_t3525")
 
 [node name="Assess_btn" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 1101.0
 offset_top = 97.9602
 offset_right = 1166.0
@@ -182,6 +183,7 @@ icon = ExtResource("2_k0sej")
 icon_alignment = 1
 
 [node name="Assess_btn2" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 1022.0
 offset_top = 97.9602
 offset_right = 1087.0
@@ -197,16 +199,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_wi4u0")
 icon = ExtResource("3_ba8ix")
 icon_alignment = 1
 
-<<<<<<< HEAD
-[node name="btn_stop" type="Button" parent="border_stop"]
-layout_mode = 0
-offset_top = -1.02039
-offset_right = 61.0
-offset_bottom = 59.9796
-theme_override_styles/normal = SubResource("StyleBoxFlat_ba8ix")
-flat = true
-=======
 [node name="Assess_btn3" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 945.0
 offset_top = 97.9602
 offset_right = 1010.0
@@ -221,9 +215,9 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_u0nuo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_wi4u0")
 icon = ExtResource("4_51ftd")
 icon_alignment = 1
->>>>>>> 5863626f030deef6e807fc12b4768b6a4fb86f10
 
 [node name="X_btn" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 1205.0
 offset_top = 36.7351
 offset_right = 1240.0
@@ -237,6 +231,7 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="ChatBotButton" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 44.0
 offset_top = 36.7351
 offset_right = 79.0
@@ -249,6 +244,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_3cctp")
 icon = ExtResource("6_k0sej")
 
 [node name="F1" type="Label" parent="Panel2"]
+layout_mode = 0
 offset_left = 54.0
 offset_top = 78.7351
 offset_right = 72.0
