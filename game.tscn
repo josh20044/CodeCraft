@@ -1,6 +1,544 @@
-[gd_scene load_steps=2 format=3 uid="uid://cs40n2xq3llww"]
+[gd_scene load_steps=40 format=3 uid="uid://cs40n2xq3llww"]
 
 [ext_resource type="Script" uid="uid://bubavmh517fvw" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://bnwbh0l5kw86n" path="res://in_game_ui.gd" id="2_hve3p"]
+[ext_resource type="Texture2D" uid="uid://haaebqb7ldc7" path="res://Icons/Menu.png" id="3_mfdv2"]
+[ext_resource type="Texture2D" uid="uid://dleqlif4l4w60" path="res://Icons/Robot.png" id="4_iotsf"]
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="5_lc2xo"]
+[ext_resource type="Texture2D" uid="uid://diw2ksy15ntxj" path="res://Icons/Chapter.png" id="6_215e1"]
+[ext_resource type="Texture2D" uid="uid://bbmhvki63hkqj" path="res://Icons/Index.png" id="7_7sc4i"]
+[ext_resource type="Texture2D" uid="uid://tgn3w0njnhoq" path="res://Icons/Inventory.png" id="8_80cx4"]
+[ext_resource type="Texture2D" uid="uid://bt54oavoqvhb6" path="res://Icons/Character.png" id="9_e8heu"]
+[ext_resource type="Texture2D" uid="uid://ds0odsyrbdi38" path="res://Icons/to-do-list.png" id="10_rvswv"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_80nbo"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_e2o6t"]
+sky_material = SubResource("ProceduralSkyMaterial_80nbo")
+
+[sub_resource type="Environment" id="Environment_feb5d"]
+background_mode = 2
+sky = SubResource("Sky_e2o6t")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fc0e3"]
+size = Vector2(100, 100)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h3j15"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tjjbm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nw3uw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u4etj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4v80v"]
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cwbuu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4v80v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qsvx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uusyb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ep3pr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dpq86"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8h7b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ukwlx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pabwj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rkija"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_46s8a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4plnj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_101o6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k0sw5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_101o6"]
+bg_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixewm"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.262933, 0.262932, 0.262932, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qo7k"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ep3pr"]
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l8h7b"]
+bg_color = Color(0.87, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dpq86"]
+bg_color = Color(0.639216, 0, 0.960784, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
 
 [node name="game" type="Node3D"]
 script = ExtResource("1_80nbo")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_feb5d")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.149433, -0.291912, 0.100084)
+mesh = SubResource("PlaneMesh_fc0e3")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.00844225, -0.146722, -0.989142, -0.00125221, 0.989178, -0.146716, 0.999964, 0, -0.00853461, -70.5838, 14.5327, 21.1624)
+
+[node name="main_ui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InGame UI" type="Control" parent="main_ui"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_hve3p")
+metadata/_edit_horizontal_guides_ = [28.0, 85.0, 186.0, 210.0, 646.0, 693.0, 598.0]
+metadata/_edit_vertical_guides_ = [51.0, 1239.0]
+
+[node name="MenuButton" type="Button" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 29.0
+offset_right = 73.0
+offset_bottom = 64.0
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("3_mfdv2")
+
+[node name="ChatBotButton" type="Button" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 28.0
+offset_right = 281.0
+offset_bottom = 63.0
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("4_iotsf")
+
+[node name="MAp Size Example" type="Panel" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 27.0
+offset_right = 231.0
+offset_bottom = 169.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4v80v")
+
+[node name="ESC" type="Label" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 70.0
+offset_right = 73.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "ESC"
+
+[node name="F1" type="Label" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 70.0
+offset_right = 274.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "F1"
+
+[node name="TAB" type="Label" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 217.0
+offset_right = 72.0
+offset_bottom = 240.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "TAB"
+
+[node name="Label" type="Label" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 673.0
+offset_right = 155.0
+offset_bottom = 696.0
+text = "UID : 00000001"
+
+[node name="Dashboard" type="HBoxContainer" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 949.0
+offset_top = 29.0
+offset_right = 1239.0
+offset_bottom = 66.0
+theme_override_constants/separation = 50
+
+[node name="ChapterButton" type="Button" parent="main_ui/InGame UI/Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cwbuu")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4v80v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0qsvx")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_uusyb")
+icon = ExtResource("6_215e1")
+
+[node name="IndexButton" type="Button" parent="main_ui/InGame UI/Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ep3pr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dpq86")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l8h7b")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ukwlx")
+icon = ExtResource("7_7sc4i")
+
+[node name="InventoryButton" type="Button" parent="main_ui/InGame UI/Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("8_80cx4")
+
+[node name="CharacterButton" type="Button" parent="main_ui/InGame UI/Dashboard"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pabwj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rkija")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_46s8a")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4plnj")
+icon = ExtResource("9_e8heu")
+
+[node name="F Names" type="HBoxContainer" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 957.0
+offset_top = 72.0
+offset_right = 1231.0
+offset_bottom = 92.0
+theme_override_constants/separation = 64
+
+[node name="F2" type="Label" parent="main_ui/InGame UI/F Names"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "F2"
+
+[node name="F3" type="Label" parent="main_ui/InGame UI/F Names"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "F3"
+
+[node name="F4" type="Label" parent="main_ui/InGame UI/F Names"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "F3"
+
+[node name="F5" type="Label" parent="main_ui/InGame UI/F Names"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "F5"
+
+[node name="TaskButton" type="Button" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 176.0
+offset_right = 73.0
+offset_bottom = 211.0
+theme_override_constants/icon_max_width = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h3j15")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tjjbm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nw3uw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u4etj")
+icon = ExtResource("10_rvswv")
+
+[node name="Currect TaskTitle" type="Label" parent="main_ui/InGame UI/TaskButton"]
+layout_mode = 0
+offset_left = 41.0
+offset_right = 211.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "◆ Example Title Here"
+
+[node name="Currect TaskSmallDescription" type="Label" parent="main_ui/InGame UI/TaskButton"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 18.0
+offset_right = 259.0
+offset_bottom = 41.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
+text = "- Example Description Here"
+
+[node name="Skills" type="Panel" parent="main_ui/InGame UI"]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 526.0
+offset_right = 1239.0
+offset_bottom = 702.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_101o6")
+
+[node name="PlayerName" type="Label" parent="main_ui/InGame UI/Skills"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -16.0
+offset_right = 43.0
+offset_bottom = 7.0
+theme_override_constants/outline_size = 2
+text = "Player Name"
+
+[node name="CurrentLevel" type="Label" parent="main_ui/InGame UI/Skills"]
+layout_mode = 0
+offset_left = 213.0
+offset_top = -16.0
+offset_right = 300.0
+offset_bottom = 7.0
+theme_override_constants/outline_size = 2
+text = "LVL 1"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="EquippedButton" type="Button" parent="main_ui/InGame UI/Skills"]
+clip_contents = true
+layout_mode = 0
+offset_left = 2.0
+offset_top = 73.0
+offset_right = 175.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k0sw5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_101o6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ixewm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qo7k")
+text = "No
+Equipment
+Set"
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="main_ui/InGame UI/Skills/EquippedButton"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 16.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "E"
+
+[node name="InHandButton1" type="Button" parent="main_ui/InGame UI/Skills"]
+clip_contents = true
+layout_mode = 0
+offset_left = 182.0
+offset_top = 73.0
+offset_right = 237.0
+offset_bottom = 117.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k0sw5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_101o6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ixewm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qo7k")
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="main_ui/InGame UI/Skills/InHandButton1"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 16.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "1"
+
+[node name="InHandButton2" type="Button" parent="main_ui/InGame UI/Skills"]
+clip_contents = true
+layout_mode = 0
+offset_left = 244.0
+offset_top = 73.0
+offset_right = 299.0
+offset_bottom = 117.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k0sw5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_101o6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ixewm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qo7k")
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="main_ui/InGame UI/Skills/InHandButton2"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 16.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "2"
+
+[node name="InHandButton3" type="Button" parent="main_ui/InGame UI/Skills"]
+clip_contents = true
+layout_mode = 0
+offset_left = 182.0
+offset_top = 123.0
+offset_right = 237.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k0sw5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_101o6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ixewm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qo7k")
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="main_ui/InGame UI/Skills/InHandButton3"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 16.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "3"
+
+[node name="InHandButton4" type="Button" parent="main_ui/InGame UI/Skills"]
+clip_contents = true
+layout_mode = 0
+offset_left = 244.0
+offset_top = 123.0
+offset_right = 299.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k0sw5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_101o6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ixewm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qo7k")
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="main_ui/InGame UI/Skills/InHandButton4"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 16.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+text = "4"
+
+[node name="HealthBar" type="ProgressBar" parent="main_ui/InGame UI/Skills"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 40.0
+offset_right = 295.0
+offset_bottom = 54.0
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/background = SubResource("StyleBoxFlat_ep3pr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_l8h7b")
+value = 100.0
+rounded = true
+show_percentage = false
+
+[node name="HealthPercent" type="Label" parent="main_ui/InGame UI/Skills/HealthBar"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -5.0
+offset_right = 284.0
+offset_bottom = 18.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_font_sizes/font_size = 12
+vertical_alignment = 1
+
+[node name="XpBar" type="ProgressBar" parent="main_ui/InGame UI/Skills"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 295.0
+offset_bottom = 26.0
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/background = SubResource("StyleBoxFlat_ep3pr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dpq86")
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="XpPercent" type="Label" parent="main_ui/InGame UI/Skills/XpBar"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -5.0
+offset_right = 284.0
+offset_bottom = 18.0
+theme_override_fonts/font = ExtResource("5_lc2xo")
+theme_override_font_sizes/font_size = 12
+vertical_alignment = 1
+
+[node name="ui" type="Control" parent="main_ui"]
+anchors_preset = 0
+offset_left = 1280.0
+offset_right = 2560.0
+offset_bottom = 720.0
+
+[connection signal="pressed" from="main_ui/InGame UI/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="main_ui/InGame UI/Dashboard/ChapterButton" to="." method="_on_chapter_button_pressed"]
+[connection signal="pressed" from="main_ui/InGame UI/Dashboard/IndexButton" to="." method="_on_index_button_pressed"]
+[connection signal="pressed" from="main_ui/InGame UI/Dashboard/InventoryButton" to="." method="_on_inventory_button_pressed"]
+[connection signal="pressed" from="main_ui/InGame UI/TaskButton" to="." method="_on_task_button_pressed"]

@@ -1,9 +1,10 @@
-<<<<<<< HEAD
+Button
+Control
+Camera3D
+MeshInstance3D
 ColorRect
 Panel
-Button
 VBoxContainer
-Control
 Label
 LineEdit
 Node
@@ -11,21 +12,3 @@ OptionButton
 HSlider
 Container
 ScrollContainer
-VScrollBar
-HScrollBar
-=======
-Button
-HTTPRequest
-Label
-Panel
-CanvasLayer
-Panel
-VBoxContainer
-ScrollContainer
-Label
-Timer
-SpinBox
-Node
-Control
-LineEdit
->>>>>>> 5863626f030deef6e807fc12b4768b6a4fb86f10

@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_hwo3c"]
 [ext_resource type="Texture2D" uid="uid://cw8ul2t3t06d6" path="res://Icons/close.png" id="2_6mnco"]
 [ext_resource type="Texture2D" uid="uid://vuxk6w6rx6el" path="res://Icons/eye.png" id="4_ag0hi"]
-[ext_resource type="Script" path="res://s_number_text_box.gd" id="5_3poao"]
+[ext_resource type="Script" uid="uid://bs4wtjopbt5li" path="res://s_number_text_box.gd" id="5_3poao"]
 [ext_resource type="Script" uid="uid://ckaxicr3xxgjv" path="res://http_real.gd" id="7_s0doj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ag0hi"]

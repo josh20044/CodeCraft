@@ -50,6 +50,7 @@ func on_login_succeeded(auth):
 	Tool.spawn_modal(self, "Login success!")
 	#$StateLabel.text = "Login success!"
 	Firebase.Auth.save_auth(auth)
+	Tool.userID = Firebase.Auth.auth.localid
 	get_tree().change_scene_to_file("res://game.tscn")
 	
 func on_signup_succeeded(auth):
