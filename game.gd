@@ -43,8 +43,7 @@ func chapter_open():
 	$main_ui/ui.add_child(chapter.instantiate())
 	var tween = get_tree().create_tween()
 	tween.tween_property($main_ui/ui, "position:x", 0.0, 0.2)
-	
-	
+
 func chapter_close():
 	for i in $main_ui/ui.get_children():
 		i.queue_free()
