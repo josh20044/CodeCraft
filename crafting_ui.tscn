@@ -1,0 +1,437 @@
+[gd_scene load_steps=23 format=3 uid="uid://b4wfvvi6e7s3v"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_pfnke"]
+[ext_resource type="Texture2D" uid="uid://b0a75e5euv0un" path="res://Icons/sort.png" id="1_pvv3h"]
+[ext_resource type="PackedScene" uid="uid://d3box7dgv0d3f" path="res://CraftingUIResources/all_recipe_v_box_container.tscn" id="2_sji3n"]
+[ext_resource type="PackedScene" uid="uid://d33bcnsfdg1jq" path="res://CraftingUIResources/crafting_inventory.tscn" id="2_xeynd"]
+[ext_resource type="Texture2D" uid="uid://dmq41vq7yw10j" path="res://Icons/magnifying-glass.png" id="3_hgcuh"]
+[ext_resource type="Texture2D" uid="uid://2j7qwsnfnx1c" path="res://Icons/return.png" id="3_sji3n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xeynd"]
+bg_color = Color(0.164706, 0.164706, 0.164706, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hgcuh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sji3n"]
+bg_color = Color(0.205117, 0.205117, 0.205117, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ootnb"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.262933, 0.262932, 0.262932, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sidgt"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sji3n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hg0sb"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nnymq"]
+bg_color = Color(0.0295066, 0.0295066, 0.0295065, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvv3h"]
+bg_color = Color(0.223103, 0.223103, 0.223103, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hg0sb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvv3h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pfnke"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ol0a3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahvvd"]
+bg_color = Color(0.282353, 0.282353, 0.282353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.568973, 0.568973, 0.568973, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_crnep"]
+bg_color = Color(0.164706, 0.164706, 0.164706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_roalp"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.381703, 0.381703, 0.381703, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[node name="Crafting UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_horizontal_guides_ = [360.0, 695.0, 105.0, 53.0, 308.0, 215.0]
+metadata/_edit_vertical_guides_ = [639.0, 495.0, 330.0, 760.0, 115.0]
+
+[node name="MainPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -553.0
+offset_top = -307.0
+offset_right = 146.0
+offset_bottom = 334.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xeynd")
+
+[node name="ItemPictureFrame" type="Panel" parent="MainPanel"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 50.0
+offset_right = 235.0
+offset_bottom = 254.0
+
+[node name="ItemName" type="Label" parent="MainPanel"]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 51.0
+offset_right = 675.0
+offset_bottom = 76.0
+theme_override_fonts/font = ExtResource("1_pfnke")
+theme_override_font_sizes/font_size = 20
+text = "Item Name"
+autowrap_mode = 1
+clip_text = true
+
+[node name="ItemDescription" type="Label" parent="MainPanel"]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 82.0
+offset_right = 675.0
+offset_bottom = 162.0
+text = "Brief Item Description..."
+autowrap_mode = 1
+clip_text = true
+
+[node name="CraftButton" type="Button" parent="MainPanel"]
+layout_mode = 0
+offset_left = 554.0
+offset_top = 265.0
+offset_right = 674.0
+offset_bottom = 296.0
+theme_override_fonts/font = ExtResource("1_pfnke")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hgcuh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sji3n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ootnb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_sidgt")
+text = "CRAFT"
+
+[node name="Add" type="Button" parent="MainPanel"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 265.0
+offset_right = 538.0
+offset_bottom = 296.0
+theme_override_fonts/font = ExtResource("1_pfnke")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hgcuh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sji3n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ootnb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_sidgt")
+text = "-"
+
+[node name="Minus" type="Button" parent="MainPanel"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 265.0
+offset_right = 458.0
+offset_bottom = 296.0
+theme_override_fonts/font = ExtResource("1_pfnke")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hgcuh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sji3n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ootnb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_sidgt")
+text = "+"
+
+[node name="LineEdit" type="LineEdit" parent="MainPanel"]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 265.0
+offset_right = 499.0
+offset_bottom = 296.0
+theme_override_constants/minimum_character_width = 1
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sji3n")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hg0sb")
+placeholder_text = "1"
+alignment = 1
+max_length = 2
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="RequirmentScrollContainer" type="ScrollContainer" parent="MainPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.5
+offset_top = -149.5
+offset_right = 323.5
+offset_bottom = -65.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MessageWarningBox" type="Label" parent="MainPanel"]
+layout_mode = 2
+offset_left = 31.0
+offset_top = 270.0
+offset_right = 408.0
+offset_bottom = 293.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_pfnke")
+theme_override_font_sizes/font_size = 12
+text = "INSUFFICIENT MATERIALS"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 1
+clip_text = true
+
+[node name="InventoryBachdrop" type="Panel" parent="MainPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -318.5
+offset_top = -13.5
+offset_right = 323.5
+offset_bottom = 289.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nnymq")
+
+[node name="Inventory Label" type="Label" parent="MainPanel/InventoryBachdrop"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 15.0
+offset_right = 112.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("1_pfnke")
+text = "INVENTORY"
+
+[node name="MaterialScrollContainer" type="ScrollContainer" parent="MainPanel/InventoryBachdrop"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -104.5
+offset_right = 307.0
+offset_bottom = 136.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CraftingInventory" parent="MainPanel/InventoryBachdrop/MaterialScrollContainer" instance=ExtResource("2_xeynd")]
+layout_mode = 2
+
+[node name="SecondPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 164.0
+offset_top = -306.0
+offset_right = 566.0
+offset_bottom = 334.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xeynd")
+
+[node name="RecipeBackdrop" type="Panel" parent="SecondPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = -297.0
+offset_right = 178.0
+offset_bottom = 297.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pvv3h")
+
+[node name="RecipeScrollContainer" type="ScrollContainer" parent="SecondPanel/RecipeBackdrop"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = -234.0
+offset_right = 161.0
+offset_bottom = 283.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AllRecipeVBoxContainer" parent="SecondPanel/RecipeBackdrop/RecipeScrollContainer" instance=ExtResource("2_sji3n")]
+layout_mode = 2
+
+[node name="IgnoreThis" type="Button" parent="SecondPanel/RecipeBackdrop"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 10.0
+offset_right = 56.0
+offset_bottom = 47.0
+
+[node name="FilterButton" type="MenuButton" parent="SecondPanel/RecipeBackdrop/IgnoreThis"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.5
+offset_top = -18.5
+offset_right = 18.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/icon_max_width = 25
+icon = ExtResource("1_pvv3h")
+icon_alignment = 1
+expand_icon = true
+item_count = 4
+popup/item_0/text = "         All     "
+popup/item_0/id = 0
+popup/item_1/text = " Categories "
+popup/item_1/id = 1
+popup/item_1/separator = true
+popup/item_2/text = "       Drills"
+popup/item_2/id = 2
+popup/item_3/text = "       Tools"
+popup/item_3/id = 3
+
+[node name="Button3" type="Button" parent="SecondPanel/RecipeBackdrop"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 10.0
+offset_right = 97.0
+offset_bottom = 47.0
+theme_override_constants/icon_max_width = 18
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hg0sb")
+icon = ExtResource("3_hgcuh")
+icon_alignment = 1
+
+[node name="Plate" type="Panel" parent="SecondPanel/RecipeBackdrop"]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 10.0
+offset_right = 339.0
+offset_bottom = 47.0
+
+[node name="SearchBar" type="LineEdit" parent="SecondPanel/RecipeBackdrop/Plate"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 2.0
+offset_right = 227.0
+offset_bottom = 35.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pvv3h")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pfnke")
+placeholder_text = "Search"
+context_menu_enabled = false
+emoji_menu_enabled = false
+caret_blink = true
+
+[node name="return_btn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1227.0
+offset_top = 19.0
+offset_right = 1257.0
+offset_bottom = 48.0
+theme_override_icons/icon = ExtResource("3_sji3n")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ol0a3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ahvvd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_crnep")
+theme_override_styles/normal = SubResource("StyleBoxFlat_roalp")
+icon_alignment = 1
+expand_icon = true

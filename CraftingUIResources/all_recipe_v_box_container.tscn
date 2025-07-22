@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3box7dgv0d3f"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_odig2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0mr2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_odig2"]
+bg_color = Color(0.385493, 0.385493, 0.385492, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0mr2"]
+
+[node name="AllRecipeVBoxContainer" type="VBoxContainer"]
+custom_minimum_size = Vector2(323, 517)
+offset_right = 323.0
+offset_bottom = 722.0
+
+[node name="ExampleRecipeButton" type="Button" parent="."]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_g0mr2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_odig2")
+
+[node name="ItemPicture" type="Panel" parent="ExampleRecipeButton"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 10.0
+offset_right = 77.0
+offset_bottom = 70.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g0mr2")
+
+[node name="ItemNamed" type="Label" parent="ExampleRecipeButton"]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 10.0
+offset_right = 308.0
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource("1_odig2")
+text = "Item Name"
+vertical_alignment = 1
+autowrap_mode = 1
+clip_text = true
