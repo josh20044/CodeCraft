@@ -1,0 +1,806 @@
+[gd_scene load_steps=6 format=3 uid="uid://d33bcnsfdg1jq"]
+
+[ext_resource type="FontFile" uid="uid://dyar6fh26gmft" path="res://Fonts/Inter Extra Bold 800.otf" id="1_7yp74"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thdbt"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0, 0, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p7p3h"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h3c58"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+anti_aliasing = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_b0chu"]
+font = ExtResource("1_7yp74")
+font_size = 12
+
+[node name="CraftingInventory" type="Control"]
+custom_minimum_size = Vector2(613, 241)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -667.0
+offset_bottom = -479.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_horizontal_guides_ = [241.0, 0.0]
+metadata/_edit_vertical_guides_ = [614.0]
+
+[node name="Storage_btn1" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 12.0
+offset_right = 77.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn2" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 12.0
+offset_right = 133.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn3" type="Button" parent="."]
+offset_left = 141.0
+offset_top = 12.0
+offset_right = 189.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn4" type="Button" parent="."]
+offset_left = 197.0
+offset_top = 12.0
+offset_right = 245.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn5" type="Button" parent="."]
+offset_left = 253.0
+offset_top = 12.0
+offset_right = 301.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn6" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 68.0
+offset_right = 77.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn7" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 68.0
+offset_right = 133.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn8" type="Button" parent="."]
+offset_left = 141.0
+offset_top = 68.0
+offset_right = 189.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn9" type="Button" parent="."]
+offset_left = 197.0
+offset_top = 68.0
+offset_right = 245.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn10" type="Button" parent="."]
+offset_left = 253.0
+offset_top = 68.0
+offset_right = 301.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn11" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 124.0
+offset_right = 77.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn12" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 124.0
+offset_right = 133.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn13" type="Button" parent="."]
+offset_left = 141.0
+offset_top = 124.0
+offset_right = 189.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn14" type="Button" parent="."]
+offset_left = 197.0
+offset_top = 124.0
+offset_right = 245.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn15" type="Button" parent="."]
+offset_left = 253.0
+offset_top = 124.0
+offset_right = 301.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn16" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 180.0
+offset_right = 77.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn17" type="Button" parent="."]
+offset_left = 85.0
+offset_top = 180.0
+offset_right = 133.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn18" type="Button" parent="."]
+offset_left = 141.0
+offset_top = 180.0
+offset_right = 189.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn19" type="Button" parent="."]
+offset_left = 197.0
+offset_top = 180.0
+offset_right = 245.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn20" type="Button" parent="."]
+offset_left = 253.0
+offset_top = 180.0
+offset_right = 301.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_qty1" type="Label" parent="."]
+offset_left = 55.0
+offset_top = 44.0
+offset_right = 75.0
+offset_bottom = 59.0
+text = "4"
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty2" type="Label" parent="."]
+offset_left = 111.0
+offset_top = 44.0
+offset_right = 131.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty3" type="Label" parent="."]
+offset_left = 167.0
+offset_top = 44.0
+offset_right = 187.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty4" type="Label" parent="."]
+offset_left = 223.0
+offset_top = 44.0
+offset_right = 243.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty5" type="Label" parent="."]
+offset_left = 279.0
+offset_top = 44.0
+offset_right = 299.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty6" type="Label" parent="."]
+offset_left = 55.0
+offset_top = 100.0
+offset_right = 75.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty7" type="Label" parent="."]
+offset_left = 111.0
+offset_top = 100.0
+offset_right = 131.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty8" type="Label" parent="."]
+offset_left = 167.0
+offset_top = 100.0
+offset_right = 187.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty9" type="Label" parent="."]
+offset_left = 223.0
+offset_top = 100.0
+offset_right = 243.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty10" type="Label" parent="."]
+offset_left = 279.0
+offset_top = 100.0
+offset_right = 299.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty11" type="Label" parent="."]
+offset_left = 55.0
+offset_top = 156.0
+offset_right = 75.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty12" type="Label" parent="."]
+offset_left = 111.0
+offset_top = 156.0
+offset_right = 131.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty13" type="Label" parent="."]
+offset_left = 167.0
+offset_top = 156.0
+offset_right = 187.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty14" type="Label" parent="."]
+offset_left = 223.0
+offset_top = 156.0
+offset_right = 243.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty15" type="Label" parent="."]
+offset_left = 279.0
+offset_top = 156.0
+offset_right = 299.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty16" type="Label" parent="."]
+offset_left = 55.0
+offset_top = 212.0
+offset_right = 75.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty17" type="Label" parent="."]
+offset_left = 111.0
+offset_top = 212.0
+offset_right = 131.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty18" type="Label" parent="."]
+offset_left = 167.0
+offset_top = 212.0
+offset_right = 187.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty19" type="Label" parent="."]
+offset_left = 223.0
+offset_top = 212.0
+offset_right = 243.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty20" type="Label" parent="."]
+offset_left = 279.0
+offset_top = 212.0
+offset_right = 299.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_btn21" type="Button" parent="."]
+offset_left = 309.0
+offset_top = 12.0
+offset_right = 357.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn22" type="Button" parent="."]
+offset_left = 365.0
+offset_top = 12.0
+offset_right = 413.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn23" type="Button" parent="."]
+offset_left = 421.0
+offset_top = 12.0
+offset_right = 469.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn24" type="Button" parent="."]
+offset_left = 477.0
+offset_top = 12.0
+offset_right = 525.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn25" type="Button" parent="."]
+offset_left = 533.0
+offset_top = 12.0
+offset_right = 581.0
+offset_bottom = 60.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn26" type="Button" parent="."]
+offset_left = 309.0
+offset_top = 68.0
+offset_right = 357.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn27" type="Button" parent="."]
+offset_left = 365.0
+offset_top = 68.0
+offset_right = 413.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn28" type="Button" parent="."]
+offset_left = 421.0
+offset_top = 68.0
+offset_right = 469.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn29" type="Button" parent="."]
+offset_left = 477.0
+offset_top = 68.0
+offset_right = 525.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn30" type="Button" parent="."]
+offset_left = 533.0
+offset_top = 68.0
+offset_right = 581.0
+offset_bottom = 116.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn31" type="Button" parent="."]
+offset_left = 309.0
+offset_top = 124.0
+offset_right = 357.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn32" type="Button" parent="."]
+offset_left = 365.0
+offset_top = 124.0
+offset_right = 413.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn33" type="Button" parent="."]
+offset_left = 421.0
+offset_top = 124.0
+offset_right = 469.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn34" type="Button" parent="."]
+offset_left = 477.0
+offset_top = 124.0
+offset_right = 525.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn35" type="Button" parent="."]
+offset_left = 533.0
+offset_top = 124.0
+offset_right = 581.0
+offset_bottom = 172.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn36" type="Button" parent="."]
+offset_left = 309.0
+offset_top = 180.0
+offset_right = 357.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn37" type="Button" parent="."]
+offset_left = 365.0
+offset_top = 180.0
+offset_right = 413.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn38" type="Button" parent="."]
+offset_left = 421.0
+offset_top = 180.0
+offset_right = 469.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn39" type="Button" parent="."]
+offset_left = 477.0
+offset_top = 180.0
+offset_right = 525.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_btn40" type="Button" parent="."]
+offset_left = 533.0
+offset_top = 180.0
+offset_right = 581.0
+offset_bottom = 228.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_thdbt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p7p3h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3c58")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Storage_qty21" type="Label" parent="."]
+offset_left = 335.0
+offset_top = 44.0
+offset_right = 355.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty22" type="Label" parent="."]
+offset_left = 391.0
+offset_top = 44.0
+offset_right = 411.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty23" type="Label" parent="."]
+offset_left = 447.0
+offset_top = 44.0
+offset_right = 467.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty24" type="Label" parent="."]
+offset_left = 503.0
+offset_top = 44.0
+offset_right = 523.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty25" type="Label" parent="."]
+offset_left = 559.0
+offset_top = 44.0
+offset_right = 579.0
+offset_bottom = 59.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty26" type="Label" parent="."]
+offset_left = 335.0
+offset_top = 100.0
+offset_right = 355.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty27" type="Label" parent="."]
+offset_left = 391.0
+offset_top = 100.0
+offset_right = 411.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty28" type="Label" parent="."]
+offset_left = 447.0
+offset_top = 100.0
+offset_right = 467.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty29" type="Label" parent="."]
+offset_left = 503.0
+offset_top = 100.0
+offset_right = 523.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty30" type="Label" parent="."]
+offset_left = 559.0
+offset_top = 100.0
+offset_right = 579.0
+offset_bottom = 115.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty31" type="Label" parent="."]
+offset_left = 335.0
+offset_top = 156.0
+offset_right = 355.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty32" type="Label" parent="."]
+offset_left = 391.0
+offset_top = 156.0
+offset_right = 411.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty33" type="Label" parent="."]
+offset_left = 447.0
+offset_top = 156.0
+offset_right = 467.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty34" type="Label" parent="."]
+offset_left = 503.0
+offset_top = 156.0
+offset_right = 523.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty35" type="Label" parent="."]
+offset_left = 559.0
+offset_top = 156.0
+offset_right = 579.0
+offset_bottom = 171.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty36" type="Label" parent="."]
+offset_left = 335.0
+offset_top = 212.0
+offset_right = 355.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty37" type="Label" parent="."]
+offset_left = 391.0
+offset_top = 212.0
+offset_right = 411.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty38" type="Label" parent="."]
+offset_left = 447.0
+offset_top = 212.0
+offset_right = 467.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty39" type="Label" parent="."]
+offset_left = 503.0
+offset_top = 212.0
+offset_right = 523.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
+
+[node name="Storage_qty40" type="Label" parent="."]
+offset_left = 559.0
+offset_top = 212.0
+offset_right = 579.0
+offset_bottom = 227.0
+label_settings = SubResource("LabelSettings_b0chu")
+horizontal_alignment = 1
