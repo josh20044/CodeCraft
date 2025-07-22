@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://by37gginkjlyo"]
+
+[ext_resource type="Script" uid="uid://hk2ujy1cdi6m" path="res://Code interface/code_space.gd" id="1_op23g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1hdle"]
+bg_color = Color(0.6, 0.431373, 0.6, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_op23g"]
+size = Vector2(426, 50)
+
+[node name="code space" type="Panel"]
+custom_minimum_size = Vector2(426, 50)
+offset_right = 426.0
+offset_bottom = 50.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1hdle")
+script = ExtResource("1_op23g")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(213, 25)
+shape = SubResource("RectangleShape2D_op23g")
+
+[node name="remove" type="Button" parent="."]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 10.0
+offset_right = 505.0
+offset_bottom = 41.0
+text = "Remove"
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="pressed" from="remove" to="." method="_on_remove_pressed"]

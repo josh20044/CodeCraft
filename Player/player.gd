@@ -56,6 +56,7 @@ func _process(delta: float) -> void:
 	_camera_spring.spring_length = clamp(_camera_spring.spring_length, 0.0, 30.0)
 	_camera_zoom_offset_buffer = 0.0
 
+
 func _physics_process(delta: float) -> void:
 	_camera_pivot.rotation.x += _camera_input_direction.y * delta
 	_camera_pivot.rotation.x = clamp(_camera_pivot.rotation.x, -PI / 6.0, PI / 3.0)
@@ -77,7 +78,7 @@ func _physics_process(delta: float) -> void:
 	
 	velocity = velocity.move_toward(move_direction * move_speed, acceleration * delta)
 	velocity.y = y_velocity + _gravity * delta
-	
+	 
 	var is_starting_jump := Input.is_action_just_pressed("space") and is_on_floor()
 	if is_starting_jump:
 		velocity.y += jump_impluse
