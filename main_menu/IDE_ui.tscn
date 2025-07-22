@@ -166,6 +166,7 @@ offset_bottom = 50.9742
 theme_override_styles/panel = SubResource("StyleBoxFlat_t3525")
 
 [node name="Assess_btn" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 1101.0
 offset_top = 97.9602
 offset_right = 1166.0
@@ -182,6 +183,7 @@ icon = ExtResource("2_k0sej")
 icon_alignment = 1
 
 [node name="Assess_btn2" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 1022.0
 offset_top = 97.9602
 offset_right = 1087.0
@@ -198,6 +200,7 @@ icon = ExtResource("3_ba8ix")
 icon_alignment = 1
 
 [node name="Assess_btn3" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 945.0
 offset_top = 97.9602
 offset_right = 1010.0
@@ -214,6 +217,7 @@ icon = ExtResource("4_51ftd")
 icon_alignment = 1
 
 [node name="X_btn" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 1205.0
 offset_top = 36.7351
 offset_right = 1240.0
@@ -227,6 +231,7 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="ChatBotButton" type="Button" parent="Panel2"]
+layout_mode = 0
 offset_left = 44.0
 offset_top = 36.7351
 offset_right = 79.0
@@ -239,6 +244,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_3cctp")
 icon = ExtResource("6_k0sej")
 
 [node name="F1" type="Label" parent="Panel2"]
+layout_mode = 0
 offset_left = 54.0
 offset_top = 78.7351
 offset_right = 72.0

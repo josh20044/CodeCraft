@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://biqkm1reqou0b"]
+[gd_scene load_steps=35 format=3 uid="uid://biqkm1reqou0b"]
 
 [ext_resource type="Script" uid="uid://bnwbh0l5kw86n" path="res://in_game_ui.gd" id="1_dpq86"]
 [ext_resource type="Texture2D" uid="uid://diw2ksy15ntxj" path="res://Icons/Chapter.png" id="1_kenku"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://haaebqb7ldc7" path="res://Icons/Menu.png" id="6_uusyb"]
 [ext_resource type="Texture2D" uid="uid://dleqlif4l4w60" path="res://Icons/Robot.png" id="7_ep3pr"]
 [ext_resource type="Texture2D" uid="uid://ds0odsyrbdi38" path="res://Icons/to-do-list.png" id="8_ep3pr"]
-[ext_resource type="PackedScene" uid="uid://ve1xeygd3oxc" path="res://main_menu/IDE_ui.tscn" id="10_l8h7b"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h3j15"]
 
@@ -491,6 +490,3 @@ offset_bottom = 18.0
 theme_override_fonts/font = ExtResource("5_4v80v")
 theme_override_font_sizes/font_size = 12
 vertical_alignment = 1
-
-[node name="IdeUi" parent="." instance=ExtResource("10_l8h7b")]
-layout_mode = 1
