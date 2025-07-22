@@ -13,6 +13,7 @@ bg_color = Color(0, 0, 0, 1)
 [sub_resource type="Animation" id="Animation_u2rf6"]
 resource_name = "DriftZ"
 length = 9.0
+step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

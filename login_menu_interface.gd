@@ -6,6 +6,7 @@ var icon_close = preload("res://Icons/eyehidden.png")
 var icon_open = preload("res://Icons/eye.png")
 
 func _ready() -> void:
+		
 	Firebase.Auth.login_succeeded.connect(on_login_succeeded)
 	Firebase.Auth.signup_succeeded.connect(on_signup_succeeded)
 	Firebase.Auth.login_failed.connect(on_login_failed)
@@ -18,6 +19,9 @@ func _process(delta: float) -> void:
 	else:
 		$Panel/VBoxContainer/PasswordTextBox.secret = true
 		$Panel/Close_Open.icon = icon_open
+	if UiSignals.signup_success:
+		UiSignals.signup_success = false
+		Tool.spawn_modal(self, "Sign up success!")
 
 
 func _on_close_open_pressed() -> void:
@@ -43,10 +47,10 @@ func _on_forget_password_button_gui_input(event: InputEvent) -> void:
 # firebase
 
 func on_login_succeeded(auth):
-	print("Login success!")
+	Tool.spawn_modal(self, "Login success!")
 	#$StateLabel.text = "Login success!"
 	Firebase.Auth.save_auth(auth)
-	get_tree().change_scene_to_file("res://Game.tscn")
+	get_tree().change_scene_to_file("res://game.tscn")
 	
 func on_signup_succeeded(auth):
 	#print(auth)
@@ -57,11 +61,13 @@ func on_signup_succeeded(auth):
 func on_login_failed(error_code, message):
 	print(error_code)
 	print(message)
+	Tool.spawn_modal(self, message)
 	#$StateLabel.text = "Login failed. Error: %s" % message
 	
 func on_signup_failed(error_code, message):
 	print(error_code)
 	print(message)
+	Tool.spawn_modal(self, message)
 	#$StateLabel.text = "Sign up failed. Error: %s" % message
 
 

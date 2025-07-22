@@ -30,7 +30,11 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
+<<<<<<< HEAD
 enabled=PackedStringArray("res://addons/godot-firebase/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
+=======
+enabled=PackedStringArray("res://addons/godot-firebase/plugin.cfg", "res://addons/http-sse-client/plugin.cfg")
+>>>>>>> c1124755ef19533a45fadb66940f2ad2728bb95c
 
 [input]
 

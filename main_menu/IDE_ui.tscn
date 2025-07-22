@@ -199,6 +199,15 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_wi4u0")
 icon = ExtResource("3_ba8ix")
 icon_alignment = 1
 
+<<<<<<< HEAD
+[node name="btn_stop" type="Button" parent="border_stop"]
+layout_mode = 0
+offset_top = -1.02039
+offset_right = 61.0
+offset_bottom = 59.9796
+theme_override_styles/normal = SubResource("StyleBoxFlat_ba8ix")
+flat = true
+=======
 [node name="Assess_btn3" type="Button" parent="Panel2"]
 layout_mode = 0
 offset_left = 945.0
@@ -215,6 +224,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_u0nuo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_wi4u0")
 icon = ExtResource("4_51ftd")
 icon_alignment = 1
+>>>>>>> 5863626f030deef6e807fc12b4768b6a4fb86f10
 
 [node name="X_btn" type="Button" parent="Panel2"]
 layout_mode = 0
