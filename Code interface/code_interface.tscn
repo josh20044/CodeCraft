@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://fuf0telmwbqw"]
+
+[ext_resource type="Script" uid="uid://d0mijq0gygnx0" path="res://Code interface/code_interface.gd" id="1_0p0f4"]
+
+[node name="Code Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 45.0
+offset_right = 1.0
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.995733, 0.967624)
+script = ExtResource("1_0p0f4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="terminal" type="Panel" parent="HBoxContainer"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/terminal"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Terminal"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/terminal"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/terminal/ScrollContainer"]
+layout_mode = 2
+
+[node name="code bag" type="Panel" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/code bag"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Code bag"
+
+[node name="Button" type="Button" parent="HBoxContainer/code bag"]
+layout_mode = 0
+offset_left = 236.602
+offset_top = 37.2045
+offset_right = 274.602
+offset_bottom = 68.2045
+text = "add
+"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/code bag"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/code bag/ScrollContainer"]
+layout_mode = 2
+alignment = 1
+
+[connection signal="pressed" from="HBoxContainer/code bag/Button" to="." method="_on_button_pressed"]

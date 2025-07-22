@@ -33,7 +33,15 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-	
+var open = true
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("q"):
+		if open:
+			$Miner/AnimationTree.set("parameters/TimeScale/scale", 1.0)
+			$Miner/AnimationTree.set("parameters/TimeSeek/seek_request", 1.6)
+		else:
+			$Miner/AnimationTree.set("parameters/TimeScale/scale", -1.0)
+		open = not open 
 
 
 func _on_chapter_button_pressed() -> void:
